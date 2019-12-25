@@ -1,0 +1,8 @@
+prefix=/home/dvir/catkin_ws/devel
+
+Name: qrotor_planner
+Description: Description of qrotor_planner
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/dvir/catkin_ws/devel/lib 
+Requires: 

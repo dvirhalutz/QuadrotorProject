@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/dvir/catkin_ws/install/setup.sh

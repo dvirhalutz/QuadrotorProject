@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- ROSPlan -->
+	<include file="$(find rosplan_planning_system)/launch/qrotor_planning_interface.launch" >
+		<arg name="domain_path"		value="$(find rotor_control)/common/domain.pddl" />
+		<arg name="problem_path"	value="$(find rotor_control)/common/problem.pddl" />
+	</include>
+
+	<!-- sim actions -->
+
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="lowerdrone" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="higherdrone" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="takepic" />
+	</include>
+	
+	<node name="rotorActionInterface" pkg="rotor_control" type="rotorActionInterface.py" respawn="false" output="screen">
+	</node>
+
+
+	<node name="rosplan_interface_undock" pkg="rosplan_planning_system" type="qrotorInterface" respawn="false" output="screen">
+      		<param name="knowledge_base"		value="rosplan_knowledge_base" />
+		<param name="pddl_action_name"		value="movebetweensquares" />
+		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
+		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
+  	</node>
+
+</launch>
