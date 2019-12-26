@@ -6,7 +6,7 @@ Initial heuristic = 18.000
 b (17.000 | 0.000)b (16.000 | 0.001)b (15.000 | 0.002)b (14.000 | 0.003)b (13.000 | 0.004)b (12.000 | 0.005)b (11.000 | 0.006)b (10.000 | 0.007)b (9.000 | 0.008)b (8.000 | 0.009)b (7.000 | 0.010)b (6.000 | 0.011)b (5.000 | 0.012)b (4.000 | 0.013)b (3.000 | 0.014)b (2.000 | 0.015)b (1.000 | 0.016);;;; Solution Found
 ; States evaluated: 25
 ; Cost: 0.017
-; Time 0.00
+; Time 0.02
 0.000: (movebetweensquares drone location00 location11)  [0.001]
 0.001: (movebetweensquares drone location11 location02)  [0.001]
 0.002: (movebetweensquares drone location02 location03)  [0.001]

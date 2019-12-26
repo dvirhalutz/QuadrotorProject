@@ -431,6 +431,8 @@ vector
 -
 rosplan_action_interface/RPActionInterface.h
 /home/dvir/catkin_ws/src/rosplan/rosplan_planning_system/include/rosplan_action_interface/rosplan_action_interface/RPActionInterface.h
+std_msgs/String.h
+/home/dvir/catkin_ws/src/rosplan/rosplan_planning_system/include/rosplan_action_interface/std_msgs/String.h
 
 /home/dvir/catkin_ws/src/rosplan/rosplan_planning_system/src/ActionInterface/RPActionInterface.cpp
 rosplan_action_interface/RPActionInterface.h
