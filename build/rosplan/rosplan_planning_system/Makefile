@@ -66,39 +66,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -111,16 +78,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : test/fast
+.PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -132,6 +99,39 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,34 +166,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/rule
 
 # Convenience name for target.
-_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test: rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
+pddl_simple_plan_dispatcher: rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/rule
 
-.PHONY : _run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test
+.PHONY : pddl_simple_plan_dispatcher
 
 # fast build rule for target.
-_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/build
-.PHONY : _run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test/fast
-
-# Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/rule
-
-# Convenience name for target.
-popf_planner_interface: rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/rule
-
-.PHONY : popf_planner_interface
-
-# fast build rule for target.
-popf_planner_interface/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build
-.PHONY : popf_planner_interface/fast
+pddl_simple_plan_dispatcher/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/build
+.PHONY : pddl_simple_plan_dispatcher/fast
 
 # Convenience name for target.
 rosplan/rosplan_planning_system/CMakeFiles/upm_planner_interface.dir/rule:
@@ -211,6 +196,21 @@ upm_planner_interface/fast:
 .PHONY : upm_planner_interface/fast
 
 # Convenience name for target.
+rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/rule
+
+# Convenience name for target.
+lpg_planner_interface: rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/rule
+
+.PHONY : lpg_planner_interface
+
+# fast build rule for target.
+lpg_planner_interface/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build
+.PHONY : lpg_planner_interface/fast
+
+# Convenience name for target.
 rosplan/rosplan_planning_system/CMakeFiles/fd_planner_interface.dir/rule:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/fd_planner_interface.dir/rule
 .PHONY : rosplan/rosplan_planning_system/CMakeFiles/fd_planner_interface.dir/rule
@@ -226,79 +226,19 @@ fd_planner_interface/fast:
 .PHONY : fd_planner_interface/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/rule
 
 # Convenience name for target.
-actionlib_generate_messages_nodejs: rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+pddl_simple_plan_parser: rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/rule
 
-.PHONY : actionlib_generate_messages_nodejs
+.PHONY : pddl_simple_plan_parser
 
 # fast build rule for target.
-actionlib_generate_messages_nodejs/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
-.PHONY : actionlib_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/rule
-
-# Convenience name for target.
-ProblemInterfaceTests: rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/rule
-
-.PHONY : ProblemInterfaceTests
-
-# fast build rule for target.
-ProblemInterfaceTests/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/build
-.PHONY : ProblemInterfaceTests/fast
-
-# Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/rule
-
-# Convenience name for target.
-rddlsim_planner_interface: rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/rule
-
-.PHONY : rddlsim_planner_interface
-
-# fast build rule for target.
-rddlsim_planner_interface/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build
-.PHONY : rddlsim_planner_interface/fast
-
-# Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_cpp: rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-
-.PHONY : actionlib_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
-
-# Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/rule
-
-# Convenience name for target.
-qrotorInterface: rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/rule
-
-.PHONY : qrotorInterface
-
-# fast build rule for target.
-qrotorInterface/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build
-.PHONY : qrotorInterface/fast
+pddl_simple_plan_parser/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/build
+.PHONY : pddl_simple_plan_parser/fast
 
 # Convenience name for target.
 rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_interface.dir/rule:
@@ -314,6 +254,21 @@ pprp_planner_interface: rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_
 pprp_planner_interface/fast:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_interface.dir/build
 .PHONY : pprp_planner_interface/fast
+
+# Convenience name for target.
+rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/rule
+
+# Convenience name for target.
+_run_tests_rosplan_planning_system: rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/rule
+
+.PHONY : _run_tests_rosplan_planning_system
+
+# fast build rule for target.
+_run_tests_rosplan_planning_system/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/build
+.PHONY : _run_tests_rosplan_planning_system/fast
 
 # Convenience name for target.
 rosplan/rosplan_planning_system/CMakeFiles/smt_planner_interface.dir/rule:
@@ -376,109 +331,94 @@ ff_planner_interface/fast:
 .PHONY : ff_planner_interface/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-actionlib_generate_messages_lisp: rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+std_srvs_generate_messages_py: rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 
-.PHONY : actionlib_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_py
 
 # fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
+std_srvs_generate_messages_py/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_eus.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/rule
 
 # Convenience name for target.
-actionlib_generate_messages_eus: rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+clean_test_results_rosplan_planning_system: rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/rule
 
-.PHONY : actionlib_generate_messages_eus
+.PHONY : clean_test_results_rosplan_planning_system
 
 # fast build rule for target.
-actionlib_generate_messages_eus/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_eus.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_eus.dir/build
-.PHONY : actionlib_generate_messages_eus/fast
+clean_test_results_rosplan_planning_system/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/build
+.PHONY : clean_test_results_rosplan_planning_system/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/rule
 
 # Convenience name for target.
-lpg_planner_interface: rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/rule
+PlanDispatchTests: rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/rule
 
-.PHONY : lpg_planner_interface
+.PHONY : PlanDispatchTests
 
 # fast build rule for target.
-lpg_planner_interface/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build
-.PHONY : lpg_planner_interface/fast
+PlanDispatchTests/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/build
+.PHONY : PlanDispatchTests/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_cpp: rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+online_planner_interface: rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/rule
 
-.PHONY : std_srvs_generate_messages_cpp
+.PHONY : online_planner_interface
 
 # fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
+online_planner_interface/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/build
+.PHONY : online_planner_interface/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/rule
 
 # Convenience name for target.
-rosplan_action_interface: rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/rule
+ParsingInterfaceTests: rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/rule
 
-.PHONY : rosplan_action_interface
+.PHONY : ParsingInterfaceTests
 
 # fast build rule for target.
-rosplan_action_interface/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/build
-.PHONY : rosplan_action_interface/fast
+ParsingInterfaceTests/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/build
+.PHONY : ParsingInterfaceTests/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-_run_tests_rosplan_planning_system: rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/rule
+std_srvs_generate_messages_eus: rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 
-.PHONY : _run_tests_rosplan_planning_system
+.PHONY : std_srvs_generate_messages_eus
 
 # fast build rule for target.
-_run_tests_rosplan_planning_system/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system.dir/build
-.PHONY : _run_tests_rosplan_planning_system/fast
-
-# Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_py: rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_py.dir/rule
-
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_py.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
+std_srvs_generate_messages_eus/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
 
 # Convenience name for target.
 rosplan/rosplan_planning_system/CMakeFiles/problemInterface.dir/rule:
@@ -526,139 +466,94 @@ run_tests_rosplan_planning_system_rostest_test_launch_parsing_interface.test/fas
 .PHONY : run_tests_rosplan_planning_system_rostest_test_launch_parsing_interface.test/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_eus: rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+std_srvs_generate_messages_cpp: rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
-.PHONY : std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_cpp
 
 # fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
+std_srvs_generate_messages_cpp/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/rule
 
 # Convenience name for target.
-run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test: rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
+rosplan_action_interface: rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/rule
 
-.PHONY : run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test
+.PHONY : rosplan_action_interface
 
 # fast build rule for target.
-run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/build
-.PHONY : run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test/fast
+rosplan_action_interface/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/build
+.PHONY : rosplan_action_interface/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_py: rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+qrotorInterface: rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/rule
 
-.PHONY : std_srvs_generate_messages_py
+.PHONY : qrotorInterface
 
 # fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
+qrotorInterface/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build
+.PHONY : qrotorInterface/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/rule
 
 # Convenience name for target.
-online_planner_interface: rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/rule
+ProblemInterfaceTests: rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/rule
 
-.PHONY : online_planner_interface
+.PHONY : ProblemInterfaceTests
 
 # fast build rule for target.
-online_planner_interface/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/build
-.PHONY : online_planner_interface/fast
+ProblemInterfaceTests/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/ProblemInterfaceTests.dir/build
+.PHONY : ProblemInterfaceTests/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/rule
 
 # Convenience name for target.
-ParsingInterfaceTests: rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/rule
+rddlsim_planner_interface: rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/rule
 
-.PHONY : ParsingInterfaceTests
+.PHONY : rddlsim_planner_interface
 
 # fast build rule for target.
-ParsingInterfaceTests/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/ParsingInterfaceTests.dir/build
-.PHONY : ParsingInterfaceTests/fast
+rddlsim_planner_interface/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build
+.PHONY : rddlsim_planner_interface/fast
 
 # Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/rule
+rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
 
 # Convenience name for target.
-pddl_simple_plan_parser: rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/rule
+_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test: rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
 
-.PHONY : pddl_simple_plan_parser
+.PHONY : _run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test
 
 # fast build rule for target.
-pddl_simple_plan_parser/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_parser.dir/build
-.PHONY : pddl_simple_plan_parser/fast
-
-# Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/rule
-
-# Convenience name for target.
-pddl_simple_plan_dispatcher: rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/rule
-
-.PHONY : pddl_simple_plan_dispatcher
-
-# fast build rule for target.
-pddl_simple_plan_dispatcher/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/build
-.PHONY : pddl_simple_plan_dispatcher/fast
-
-# Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/rule
-
-# Convenience name for target.
-PlanDispatchTests: rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/rule
-
-.PHONY : PlanDispatchTests
-
-# fast build rule for target.
-PlanDispatchTests/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/PlanDispatchTests.dir/build
-.PHONY : PlanDispatchTests/fast
-
-# Convenience name for target.
-rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/rule
-.PHONY : rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/rule
-
-# Convenience name for target.
-clean_test_results_rosplan_planning_system: rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/rule
-
-.PHONY : clean_test_results_rosplan_planning_system
-
-# fast build rule for target.
-clean_test_results_rosplan_planning_system/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/clean_test_results_rosplan_planning_system.dir/build
-.PHONY : clean_test_results_rosplan_planning_system/fast
+_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/build
+.PHONY : _run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test/fast
 
 # Convenience name for target.
 rosplan/rosplan_planning_system/CMakeFiles/online_plan_dispatcher.dir/rule:
@@ -870,14 +765,44 @@ _run_tests_rosplan_planning_system_rostest_test_launch_problem_interface.test/fa
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_problem_interface.test.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/_run_tests_rosplan_planning_system_rostest_test_launch_problem_interface.test.dir/build
 .PHONY : _run_tests_rosplan_planning_system_rostest_test_launch_problem_interface.test/fast
 
+# Convenience name for target.
+rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
+
+# Convenience name for target.
+run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test: rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/rule
+
+.PHONY : run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test
+
+# fast build rule for target.
+run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test.dir/build
+.PHONY : run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test/fast
+
+# Convenience name for target.
+rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/rule
+.PHONY : rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/rule
+
+# Convenience name for target.
+popf_planner_interface: rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/rule
+
+.PHONY : popf_planner_interface
+
+# fast build rule for target.
+popf_planner_interface/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build
+.PHONY : popf_planner_interface/fast
+
 src/ActionInterface/RPActionInterface.o: src/ActionInterface/RPActionInterface.cpp.o
 
 .PHONY : src/ActionInterface/RPActionInterface.o
 
 # target to build an object file
 src/ActionInterface/RPActionInterface.cpp.o:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/src/ActionInterface/RPActionInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/src/ActionInterface/RPActionInterface.cpp.o
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/src/ActionInterface/RPActionInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/simulatedAction.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/simulatedAction.dir/src/ActionInterface/RPActionInterface.cpp.o
 .PHONY : src/ActionInterface/RPActionInterface.cpp.o
 
@@ -887,8 +812,8 @@ src/ActionInterface/RPActionInterface.i: src/ActionInterface/RPActionInterface.c
 
 # target to preprocess a source file
 src/ActionInterface/RPActionInterface.cpp.i:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/src/ActionInterface/RPActionInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/src/ActionInterface/RPActionInterface.cpp.i
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/src/ActionInterface/RPActionInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/simulatedAction.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/simulatedAction.dir/src/ActionInterface/RPActionInterface.cpp.i
 .PHONY : src/ActionInterface/RPActionInterface.cpp.i
 
@@ -898,8 +823,8 @@ src/ActionInterface/RPActionInterface.s: src/ActionInterface/RPActionInterface.c
 
 # target to generate assembly for a file
 src/ActionInterface/RPActionInterface.cpp.s:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/src/ActionInterface/RPActionInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rosplan_action_interface.dir/src/ActionInterface/RPActionInterface.cpp.s
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/qrotorInterface.dir/src/ActionInterface/RPActionInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/simulatedAction.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/simulatedAction.dir/src/ActionInterface/RPActionInterface.cpp.s
 .PHONY : src/ActionInterface/RPActionInterface.cpp.s
 
@@ -1017,8 +942,8 @@ src/PlanDispatch/PlanDispatcher.o: src/PlanDispatch/PlanDispatcher.cpp.o
 
 # target to build an object file
 src/PlanDispatch/PlanDispatcher.cpp.o:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.o
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/online_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/online_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.o
 .PHONY : src/PlanDispatch/PlanDispatcher.cpp.o
 
@@ -1028,8 +953,8 @@ src/PlanDispatch/PlanDispatcher.i: src/PlanDispatch/PlanDispatcher.cpp.i
 
 # target to preprocess a source file
 src/PlanDispatch/PlanDispatcher.cpp.i:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.i
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/online_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/online_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.i
 .PHONY : src/PlanDispatch/PlanDispatcher.cpp.i
 
@@ -1039,8 +964,8 @@ src/PlanDispatch/PlanDispatcher.s: src/PlanDispatch/PlanDispatcher.cpp.s
 
 # target to generate assembly for a file
 src/PlanDispatch/PlanDispatcher.cpp.s:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_simple_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.s
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pddl_esterel_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/online_plan_dispatcher.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/online_plan_dispatcher.dir/src/PlanDispatch/PlanDispatcher.cpp.s
 .PHONY : src/PlanDispatch/PlanDispatcher.cpp.s
 
@@ -1326,17 +1251,17 @@ src/PlannerInterface/PlannerInterface.o: src/PlannerInterface/PlannerInterface.c
 
 # target to build an object file
 src/PlannerInterface/PlannerInterface.cpp.o:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/upm_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/upm_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/fd_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/fd_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/smt_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/smt_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/metricff_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/metricff_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/ff_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/ff_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/tfd_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/tfd_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.o
 .PHONY : src/PlannerInterface/PlannerInterface.cpp.o
 
 src/PlannerInterface/PlannerInterface.i: src/PlannerInterface/PlannerInterface.cpp.i
@@ -1345,17 +1270,17 @@ src/PlannerInterface/PlannerInterface.i: src/PlannerInterface/PlannerInterface.c
 
 # target to preprocess a source file
 src/PlannerInterface/PlannerInterface.cpp.i:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/upm_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/upm_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/fd_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/fd_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/smt_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/smt_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/metricff_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/metricff_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/ff_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/ff_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/tfd_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/tfd_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.i
 .PHONY : src/PlannerInterface/PlannerInterface.cpp.i
 
 src/PlannerInterface/PlannerInterface.s: src/PlannerInterface/PlannerInterface.cpp.s
@@ -1364,17 +1289,17 @@ src/PlannerInterface/PlannerInterface.s: src/PlannerInterface/PlannerInterface.c
 
 # target to generate assembly for a file
 src/PlannerInterface/PlannerInterface.cpp.s:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/upm_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/upm_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/fd_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/fd_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/pprp_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/smt_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/smt_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/metricff_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/metricff_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/ff_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/ff_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/lpg_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/online_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/rddlsim_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/tfd_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/tfd_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/build.make rosplan/rosplan_planning_system/CMakeFiles/popf_planner_interface.dir/src/PlannerInterface/PlannerInterface.cpp.s
 .PHONY : src/PlannerInterface/PlannerInterface.cpp.s
 
 src/PlannerInterface/RDDLSIMPlannerInterface.o: src/PlannerInterface/RDDLSIMPlannerInterface.cpp.o
@@ -1735,44 +1660,34 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... list_install_components"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... _run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test"
-	@echo "... edit_cache"
-	@echo "... popf_planner_interface"
+	@echo "... pddl_simple_plan_dispatcher"
 	@echo "... upm_planner_interface"
+	@echo "... lpg_planner_interface"
 	@echo "... fd_planner_interface"
-	@echo "... actionlib_generate_messages_nodejs"
-	@echo "... ProblemInterfaceTests"
-	@echo "... rddlsim_planner_interface"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... qrotorInterface"
+	@echo "... pddl_simple_plan_parser"
 	@echo "... pprp_planner_interface"
+	@echo "... _run_tests_rosplan_planning_system"
 	@echo "... smt_planner_interface"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... install"
 	@echo "... metricff_planner_interface"
 	@echo "... ff_planner_interface"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... actionlib_generate_messages_eus"
-	@echo "... lpg_planner_interface"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... rosplan_action_interface"
-	@echo "... _run_tests_rosplan_planning_system"
-	@echo "... actionlib_generate_messages_py"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... clean_test_results_rosplan_planning_system"
+	@echo "... PlanDispatchTests"
+	@echo "... online_planner_interface"
+	@echo "... ParsingInterfaceTests"
+	@echo "... install/local"
+	@echo "... std_srvs_generate_messages_eus"
 	@echo "... problemInterface"
 	@echo "... pddl_esterel_plan_dispatcher"
 	@echo "... run_tests_rosplan_planning_system_rostest_test_launch_parsing_interface.test"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... test"
-	@echo "... run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... online_planner_interface"
-	@echo "... ParsingInterfaceTests"
-	@echo "... pddl_simple_plan_parser"
-	@echo "... pddl_simple_plan_dispatcher"
-	@echo "... PlanDispatchTests"
-	@echo "... clean_test_results_rosplan_planning_system"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... rosplan_action_interface"
+	@echo "... qrotorInterface"
+	@echo "... ProblemInterfaceTests"
+	@echo "... rddlsim_planner_interface"
+	@echo "... _run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test"
 	@echo "... rebuild_cache"
 	@echo "... online_plan_dispatcher"
 	@echo "... pddl_esterel_plan_parser"
@@ -1788,6 +1703,11 @@ help:
 	@echo "... _run_tests_rosplan_planning_system_rostest_test_launch_planner_interface.test"
 	@echo "... run_tests_rosplan_planning_system_rostest_test_launch_problem_interface.test"
 	@echo "... _run_tests_rosplan_planning_system_rostest_test_launch_problem_interface.test"
+	@echo "... install/strip"
+	@echo "... run_tests_rosplan_planning_system_rostest_test_launch_plan_dispatch.test"
+	@echo "... test"
+	@echo "... popf_planner_interface"
+	@echo "... edit_cache"
 	@echo "... src/ActionInterface/RPActionInterface.o"
 	@echo "... src/ActionInterface/RPActionInterface.i"
 	@echo "... src/ActionInterface/RPActionInterface.s"

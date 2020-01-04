@@ -1,8 +1,0 @@
-prefix=/home/dvir/catkin_ws/devel
-
-Name: simple_contorller
-Description: Description of simple_contorller
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/dvir/catkin_ws/devel/lib 
-Requires: 
