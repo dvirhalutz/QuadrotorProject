@@ -3,6 +3,6 @@ prefix=/home/dvir/catkin_ws/install
 Name: rotor_control
 Description: Description of rotor_control
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/dvir/catkin_ws/install/include
 Libs: -L/home/dvir/catkin_ws/install/lib 
-Requires: 
+Requires: actionlib_msgs

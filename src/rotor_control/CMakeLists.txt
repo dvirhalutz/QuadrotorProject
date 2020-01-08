@@ -91,6 +91,15 @@ find_package(catkin REQUIRED COMPONENTS
 #   cfg/DynReconf2.cfg
 # )
 
+find_package(catkin REQUIRED COMPONENTS actionlib actionlib_msgs )
+add_action_files(
+  DIRECTORY action
+  FILES qrotorMove.action
+)
+generate_messages(
+  DEPENDENCIES actionlib_msgs std_msgs  # Or other packages containing msgs
+)
+
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -106,6 +115,10 @@ catkin_package(
 #  CATKIN_DEPENDS rospy
 #  DEPENDS system_lib
 )
+catkin_package(
+  CATKIN_DEPENDS actionlib_msgs
+)
+
 
 ###########
 ## Build ##
@@ -202,3 +215,8 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+
+
+
+
