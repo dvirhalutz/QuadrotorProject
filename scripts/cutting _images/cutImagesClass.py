@@ -60,7 +60,7 @@ class cutImages():
             crop_img = img[y_0:y_f, x_0:x_f]
             old_name = img_path.split("/")[-1]
             cv2.imwrite(self.path_folder_images_to_save+'/'+self.image_starting_with +
-                        ''+str(uuid.uuid4())+''+old_name, crop_img, [cv2.IMWRITE_PNG_COMPRESSION, 0])
+                        ''+str(uuid.uuid4())+''+old_name+'.png', crop_img, [cv2.IMWRITE_PNG_COMPRESSION, 0])
             count += 1
             if self.verbos == 1:
                 if count % 10 == 0:
@@ -106,7 +106,7 @@ class createImagesFromVideo():
             # cv2.imshow('app', frame)
             if index % self.save_every_frame == 0:
                 cv2.imwrite(self.path_folder_images_to_save+'/'+self.image_starting_with +
-                            ''+str(uuid.uuid4()), frame, [cv2.IMWRITE_PNG_COMPRESSION, 0])
+                            ''+str(uuid.uuid4())+'.png', frame, [cv2.IMWRITE_PNG_COMPRESSION, 0])
                 print('.', end=' ')
             index += 1
         cap.release()
