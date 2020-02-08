@@ -79,6 +79,14 @@ def VideoImageDialog():
         final_image_size = 252
     else:
         final_image_size = int(final_image_size)
+
+    files = []
+    for r, d, f in os.walk(path_folder_images_to_save_video):
+        for file in f:
+            files.append(os.path.join(r, file))
+
+    print(files)
+
     videoCutter = createImagesFromVideo(path_to_video,
                                         path_folder_images_to_save_video,
                                         image_starting_with,
