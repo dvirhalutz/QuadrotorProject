@@ -1,5 +1,6 @@
 from cutImagesClass import cutImages
 from cutImagesClass import createImagesFromVideo
+import os
 
 
 def startingDialog():
