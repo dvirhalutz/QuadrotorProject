@@ -5,22 +5,22 @@ from controllerClass import controlQuadrotor  as CQ
 from renderPlanClass import createRenderedPlanFile  as RPL
 
 locations={
-    'location00':(0,0,5),
-    'location01':(0,1,5),
-    'location02':(0,2,5),
-    'location03':(0,3,5),
-    'location10':(1,0,5),
-    'location11':(1,1,5),
-    'location12':(1,2,5),
-    'location13':(1,3,5),
-    'location20':(2,0,5),
-    'location21':(2,1,5),
-    'location22':(2,2,5),
-    'location23':(2,3,5),
-    'location30':(3,0,5),
-    'location31':(3,1,5),
-    'location32':(3,2,5),
-    'location33':(3,3,5),
+    'location00':(15,-15,5),
+    'location01':(15,-5,5),
+    'location02':(15,5,5),
+    'location03':(15,15,5),
+    'location10':(5,-15,5),
+    'location11':(5,-5,5),
+    'location12':(5,5,5),
+    'location13':(5,15,5),
+    'location20':(-5,-15,5),
+    'location21':(-5,-5,5),
+    'location22':(-5,5,5),
+    'location23':(-5,15,5),
+    'location30':(-15,-15,5),
+    'location31':(-15,-5,5),
+    'location32':(-15,5,5),
+    'location33':(-15,15,5),
 }
 #mode = 'teleport'
 mode = 'fly'
