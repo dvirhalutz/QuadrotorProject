@@ -7,40 +7,78 @@ from gazebo_msgs.srv import SetModelState, GetModelState
 from geometry_msgs.msg import Twist
 from geometry_msgs.msg import Pose
 from gazebo_msgs.msg import ModelState
+from ....ML.test import model_test
+from os import walk
+import os
 
 
 class controlQuadrotor():
-    def __init__(self, mode='teleport',lowHight=2,highHight=7):
+    def __init__(self, mode='teleport', lowHight=2, highHight=7):
         self.mode = mode
         self.lowHight = lowHight
         self.highHight = highHight
-        self.x ,self.y, self.z= 0,0,0
+        self.x, self.y, self.z = 0, 0, 0
         rospy.init_node('controller', anonymous=True)
         # TAKEOFF Command - Ask The Other Dvir How To Do It...
-    
-    def moveDroneToNewLocation(self,newLocation):
-        x,y,z = newLocation
+
+    def moveDroneToNewLocation(self, newLocation):
+        x, y, z = newLocation
         if self.mode == "teleport":
             self.setPosition(x, y, z)
         else:
             self.flyToPos(x, y, z)
-        self.x=x
-        self.y=y
-        self.z=z
-    
+        self.x = x
+        self.y = y
+        self.z = z
+
     def moveDroneLower(self):
+        # move random image from PreTesting to InTesting
+        path_to_PreTesting = "../../../photos_taken_by_quadrotor/PreTesting"
+        path_to_InTesting = "../../../photos_taken_by_quadrotor/InTesting"
+        image_path, image_new_path = "", ""
+        for (root, _, filename) in walk(path_to_PreTesting):
+            if filename.endswith('.jpeg'):
+                image_path = os.path.join(root, filename)
+                image_new_path = os.path.join(path_to_InTesting, filename)
+                os.rename(image_path, image_new_path)
+                rospy.loginfo(f"Moved Image -> {filename}")
+                break
+        if image_path == "":
+            rospy.loginfo("Couldn't get the image from the folder")
+
         if self.mode == "teleport":
             self.setPosition(self.x, self.y, self.lowHight)
         else:
             self.flyToPos(self.x, self.y, self.lowHight)
-        self.z=self.lowHight
-    
+        self.z = self.lowHight
+
+    def evaluateImage(self):
+        # evaluate image in InTesting folder
+        image_class = model_test()
+        if image_class == "EMPLTY":
+            rospy.loginfo("Couldn't evaluate the image - Problem")
+        else:
+            rospy.loginfo(f"The image has classified as: {image_class}")
+
     def moveDroneHigher(self):
+         # move image from InTesting to Done
+        path_to_InTesting = "../../../photos_taken_by_quadrotor/InTesting"
+        path_to_Done = "../../../photos_taken_by_quadrotor/Done"
+        image_path, image_new_path = "", ""
+        for (root, _, filename) in walk(path_to_InTesting):
+            if filename.endswith('.jpeg'):
+                image_path = os.path.join(root, filename)
+                image_new_path = os.path.join(path_to_Done, filename)
+                os.rename(image_path, image_new_path)
+                rospy.loginfo(f"Moved Image -> {filename}")
+        if image_path == "":
+            rospy.loginfo("Don't have any image inside the InTesting")
+
         if self.mode == "teleport":
             self.setPosition(self.x, self.y, self.highHight)
         else:
             self.flyToPos(self.x, self.y, self.highHight)
-        self.z=self.highHight
+        self.z = self.highHight
 
     def speed(self, dst, curr):
         if abs(dst-curr) < 0.1:
@@ -50,15 +88,17 @@ class controlQuadrotor():
         else:
             return -0.2
 
-
     def init_twist(self, x, y, z):
         rospy.wait_for_service('/gazebo/set_model_state')
         rospy.loginfo('Service is ready')
         res = rospy.ServiceProxy('/gazebo/get_model_state', GetModelState)
         curr_pos = res("quadrotor", "")
-        rospy.loginfo('dest_x is %f and curr_x %f', x, curr_pos.pose.position.x)
-        rospy.loginfo('dest_y is %f and curr_y %f', y, curr_pos.pose.position.y)
-        rospy.loginfo('dest_z is %f and curr_z %f', z, curr_pos.pose.position.z)
+        rospy.loginfo('dest_x is %f and curr_x %f',
+                      x, curr_pos.pose.position.x)
+        rospy.loginfo('dest_y is %f and curr_y %f',
+                      y, curr_pos.pose.position.y)
+        rospy.loginfo('dest_z is %f and curr_z %f',
+                      z, curr_pos.pose.position.z)
 
         twist = Twist()
         twist.linear.x = self.speed(x, curr_pos.pose.position.x)
@@ -71,7 +111,6 @@ class controlQuadrotor():
 
         return twist
 
-
     def init_pose(self, x, y, z):
         pose = Pose()
         pose.position.x = x
@@ -82,7 +121,6 @@ class controlQuadrotor():
         pose.orientation.z = 0.0
         pose.orientation.w = 0.0
         return pose
-
 
     def init_model_state(self, x, y, z):
         model_name = "quadrotor"
@@ -106,7 +144,6 @@ class controlQuadrotor():
 
         return model_state
 
-
     def setPosition(self, x, y, z):
         rospy.loginfo('A request for position set has been received ')
         # # Create handle to the reset service
@@ -121,7 +158,6 @@ class controlQuadrotor():
 
         except rospy.ServiceException:
             rospy.loginfo('position set failed')
-
 
     def flyToPos(self, x, y, z):
         rospy.loginfo('A request for position set has been received ')
@@ -142,4 +178,3 @@ class controlQuadrotor():
             # break
 
         # land
-

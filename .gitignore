@@ -1,4 +1,5 @@
 dataset/*
 src/rosplan/*
 ML/saved_models/*
+images_pool/*
 

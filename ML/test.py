@@ -33,7 +33,7 @@ path_to_model = the path to the saved weights
 test_data_dir = path to directory contains the images for evaluating
                 Hirarcy is:
                     ->PreTesting - all the images that the drone took
-                    ->InTraining - contains only one image at a time
+                    ->InTesting - contains only one image at a time
                     ->Done - all th images after network inference
                     ->resualt.txt - result file with image name and its result
                                     if is_production==False so the right class as well
@@ -44,7 +44,7 @@ test_image_format = the format of the images the drone is taking
 """
 
 
-def model_test(path_to_model, test_data_dir="../photos_taken_by_quadrotor/InTraining", list_of_classes=['withHat', 'withOutHat', 'withOutMan'], logging_path="../photos_taken_by_quadrotor/resualt.json", is_production=False, test_image_format="jpeg"):
+def model_test(path_to_model="./saved_models/densenet_SGD.pt", test_data_dir="../photos_taken_by_quadrotor/InTesting", list_of_classes=['withHat', 'withOutHat', 'withOutMan'], logging_path="../photos_taken_by_quadrotor/resualt.json", is_production=False, test_image_format="jpeg"):
     image_name_in_testing = ""
     for (_, _, filenames) in walk(test_data_dir):
         if filenames.endswith('.'+test_image_format):
@@ -56,7 +56,8 @@ def model_test(path_to_model, test_data_dir="../photos_taken_by_quadrotor/InTrai
             if class_name in image_name_in_testing:
                 image_class_name = class_name
                 break
-
+    if image_name_in_testing == "":
+        return "EMPTY"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     log_file = logging_path
@@ -85,6 +86,7 @@ def model_test(path_to_model, test_data_dir="../photos_taken_by_quadrotor/InTrai
     net = torch.load(path_to_model).to(device)
     net = net.to(device)
     net.eval()
+    evaluate_class = "EMPTY"
     # i = 1
     with torch.no_grad():
         for data in dataloaders_dict:
@@ -92,5 +94,7 @@ def model_test(path_to_model, test_data_dir="../photos_taken_by_quadrotor/InTrai
             outputs = net(images.to(device))
             for index, _ in enumerate(torch.argmax(outputs, dim=1)):
                 logger.info(f'image test result:\t{list_of_classes[index]}')
+                evaluate_class = list_of_classes[index]
                 if is_production == False:
                     logger.info(f'image right class is:\t{image_class_name}')
+    return evaluate_class
