@@ -1,36 +1,39 @@
 #!/usr/bin/env python
 # main script
 
+from __future__ import with_statement
+from __future__ import absolute_import
 from controllerClass import controlQuadrotor as CQ
 from renderPlanClass import createRenderedPlanFile as RPL
+from io import open
 
 locations = {
-    'location00': (15, -15, 5),
-    'location01': (15, -5, 5),
-    'location02': (15, 5, 5),
-    'location03': (15, 15, 5),
-    'location10': (5, -15, 5),
-    'location11': (5, -5, 5),
-    'location12': (5, 5, 5),
-    'location13': (5, 15, 5),
-    'location20': (-5, -15, 5),
-    'location21': (-5, -5, 5),
-    'location22': (-5, 5, 5),
-    'location23': (-5, 15, 5),
-    'location30': (-15, -15, 5),
-    'location31': (-15, -5, 5),
-    'location32': (-15, 5, 5),
-    'location33': (-15, 15, 5),
+    u'location00': (15, -15, 5),
+    u'location01': (15, -5, 5),
+    u'location02': (15, 5, 5),
+    u'location03': (15, 15, 5),
+    u'location10': (5, -15, 5),
+    u'location11': (5, -5, 5),
+    u'location12': (5, 5, 5),
+    u'location13': (5, 15, 5),
+    u'location20': (-5, -15, 5),
+    u'location21': (-5, -5, 5),
+    u'location22': (-5, 5, 5),
+    u'location23': (-5, 15, 5),
+    u'location30': (-15, -15, 5),
+    u'location31': (-15, -5, 5),
+    u'location32': (-15, 5, 5),
+    u'location33': (-15, 15, 5),
 }
 #mode = 'teleport'
-mode = 'fly'
+mode = u'fly'
 
 dictOfAtions = {
-    'movebetweensquares': [('moveDroneToNewLocation', 3)],
-    'takepic': [('moveDroneLower', -1), ('evaluateImage', -1), ('moveDroneHigher', -1)]
+    u'movebetweensquares': [(u'moveDroneToNewLocation', 3)],
+    u'takepic': [(u'moveDroneLower', -1), (u'evaluateImage', -1), (u'moveDroneHigher', -1)]
 }
-pathToPlan = '/home/dvir/catkin_ws/src/rotor_control/common/plan.pddl'
-pathToSaveRenderedFile = '/home/dvir/catkin_ws/src/rotor_control/common/planRendered.txt'
+pathToPlan = u'/home/dvir/catkin_ws/src/rotor_control/common/plan.pddl'
+pathToSaveRenderedFile = u'/home/dvir/catkin_ws/src/rotor_control/common/planRendered.txt'
 
 
 # create the file for plan exec
@@ -40,25 +43,25 @@ cl.readLinesOfFile()
 # read the rendered file and execute its commands
 
 cq = CQ(mode, lowHight=2, highHight=5)
-with open(pathToSaveRenderedFile, "r") as fp:
+with open(pathToSaveRenderedFile, u"r") as fp:
     for _, line in enumerate(fp):
-        func_name = line.split('(')
-        if func_name[0] == 'moveDroneToNewLocation':
+        func_name = line.split(u'(')
+        if func_name[0] == u'moveDroneToNewLocation':
             params = func_name[1][:-2]
-            print('moveDroneToNewLocation')
-            print(params)
-            params = params.split(',')
+            print u'moveDroneToNewLocation'
+            print params
+            params = params.split(u',')
             params = [int(number) for number in params]
             cq.moveDroneToNewLocation((params[0], params[1], params[2]))
-        elif func_name[0] == 'moveDroneLower':
-            print('moveDroneLower')
+        elif func_name[0] == u'moveDroneLower':
+            print u'moveDroneLower'
             cq.moveDroneLower()
-        elif func_name[0] == 'moveDroneHigher':
-            print('moveDroneHigher')
+        elif func_name[0] == u'moveDroneHigher':
+            print u'moveDroneHigher'
             cq.moveDroneHigher()
-        elif func_name[0] == 'evaluateImage':
-            print('evaluateImage')
+        elif func_name[0] == u'evaluateImage':
+            print u'evaluateImage'
             cq.evaluateImage()
         else:
-            print('BUG!!!!!')
+            print u'BUG!!!!!'
         # getattr(cq,line)
