@@ -32,8 +32,8 @@ dictOfAtions = {
     u'movebetweensquares': [(u'moveDroneToNewLocation', 3)],
     u'takepic': [(u'moveDroneLower', -1), (u'evaluateImage', -1), (u'moveDroneHigher', -1)]
 }
-pathToPlan = u'/home/dvir/catkin_ws/src/rotor_control/common/plan.pddl'
-pathToSaveRenderedFile = u'/home/dvir/catkin_ws/src/rotor_control/common/planRendered.txt'
+pathToPlan = u'../common/plan.pddl'
+pathToSaveRenderedFile = u'../common/planRendered.txt'
 
 
 # create the file for plan exec
@@ -64,4 +64,3 @@ with open(pathToSaveRenderedFile, u"r") as fp:
             cq.evaluateImage()
         else:
             print u'BUG!!!!!'
-        # getattr(cq,line)
