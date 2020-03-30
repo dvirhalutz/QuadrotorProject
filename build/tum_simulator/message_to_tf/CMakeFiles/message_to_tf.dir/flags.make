@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"message_to_tf\"
 
-CXX_INCLUDES = -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/dvir/catkin_ws/devel/include -I/home/dvir/catkin_ws/src/geometry2/tf2_ros/include -I/home/dvir/catkin_ws/src/geometry2/tf2/include -I/home/dvir/catkin_ws/src/geometry2/tf2_msgs/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

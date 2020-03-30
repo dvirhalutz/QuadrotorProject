@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"occupancy_grid_utils\"
 
-CXX_INCLUDES = -I/home/dvir/catkin_ws/devel/include -I/home/dvir/catkin_ws/src/occupancy_grid_utils/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet -I/usr/include/python2.7 -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv 
+CXX_INCLUDES = -I/home/dvir/catkin_ws/devel/include -I/home/dvir/catkin_ws/src/occupancy_grid_utils/include -I/home/dvir/catkin_ws/src/geometry2/tf2_ros/include -I/home/dvir/catkin_ws/src/geometry2/tf2/include -I/home/dvir/catkin_ws/src/geometry2/tf2_msgs/include -I/home/dvir/catkin_ws/src/geometry2/tf2_bullet/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet -I/usr/include/python2.7 -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv 
 

@@ -63,7 +63,7 @@ class createRenderedPlanFile(object):
             
 
     def readLinesOfFile(self):
-        with open(self.pathToPlan, u"r") as fp:
+        with open(self.pathToPlan, "r") as fp:
             for _, line in enumerate(fp):
                 self.convertPlanLineToActionAndSaveIt(line)
 

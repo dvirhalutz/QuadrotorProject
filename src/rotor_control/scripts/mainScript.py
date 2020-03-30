@@ -32,8 +32,8 @@ dictOfAtions = {
     u'movebetweensquares': [(u'moveDroneToNewLocation', 3)],
     u'takepic': [(u'moveDroneLower', -1), (u'evaluateImage', -1), (u'moveDroneHigher', -1)]
 }
-pathToPlan = u'../common/plan.pddl'
-pathToSaveRenderedFile = u'../common/planRendered.txt'
+pathToPlan = u'/home/dvir/catkin_ws/src/rotor_control/common/plan.pddl'
+pathToSaveRenderedFile = u'/home/dvir/catkin_ws/src/rotor_control/common/planRendered.txt'
 
 
 # create the file for plan exec

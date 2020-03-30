@@ -559,10 +559,10 @@ knowledgeBase_EXTERNAL_OBJECTS =
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: rosplan/rosplan_knowledge_base/CMakeFiles/knowledgeBase.dir/src/VALfiles/ptree.cpp.o
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: rosplan/rosplan_knowledge_base/CMakeFiles/knowledgeBase.dir/build.make
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /opt/ros/kinetic/lib/libtf.so
-/home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /home/dvir/catkin_ws/devel/lib/libtf2_ros.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /opt/ros/kinetic/lib/libactionlib.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /opt/ros/kinetic/lib/libtf2.so
+/home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /home/dvir/catkin_ws/devel/lib/libtf2.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /home/dvir/catkin_ws/devel/lib/librddl_parser.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /home/dvir/catkin_ws/devel/lib/libippc_server.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/knowledgeBase: /home/dvir/catkin_ws/devel/lib/libppddl_parser.so

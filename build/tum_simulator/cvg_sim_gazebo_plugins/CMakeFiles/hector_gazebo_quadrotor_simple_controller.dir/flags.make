@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=gnu++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"cvg_sim_gazebo_plugins\" -Dhector_gazebo_quadrotor_simple_controller_EXPORTS
 
-CXX_INCLUDES = -I/home/dvir/catkin_ws/devel/include -I/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_gazebo_plugins/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/gazebo-7 -I/usr/include/sdformat-4.0 -I/usr/include/ignition/math2 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging 
+CXX_INCLUDES = -I/home/dvir/catkin_ws/devel/include -I/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_gazebo_plugins/include -I/home/dvir/catkin_ws/src/geometry2/tf2_ros/include -I/home/dvir/catkin_ws/src/geometry2/tf2/include -I/home/dvir/catkin_ws/src/geometry2/tf2_msgs/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/gazebo-7 -I/usr/include/sdformat-4.0 -I/usr/include/ignition/math2 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging 
 

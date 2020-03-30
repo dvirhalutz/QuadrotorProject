@@ -4,10 +4,11 @@
    (:predicates 
       (checked ?x - location)  ;location
       (unChecked ?x - location)
-      (pictured ?x - location)
-      (unPictured ?x - location)
+      (pictured ?p - person)
+      (unPictured ?p - person)
       (locationAdjust ?l1 - location ?l2 - location)
       (at_d ?d - quadrotor ?l - location)
+      (at_p ?p - person ?l - location)
       (containObst ?l1 - location)
       (notContainObst ?l1 - location)
       (heightHigh ?d - quadrotor)
@@ -20,10 +21,11 @@
       :effect (and (at_d ?d ?l2) (not (at_d ?d ?l1)) (checked ?l1) (checked ?l2) (not (unChecked ?l2)) )
    )
    (:action takepic
-   :parameters ( ?d - quadrotor ?l1 - location )
-   :precondition (and (at_d ?d ?l1) (unPictured ?l1))
-   :effect (and (pictured ?l1) (not (unPictured ?l1)))
+   :parameters ( ?d - quadrotor ?l1 - location ?p - person)
+   :precondition (and (at_d ?d ?l1) (at_p ?p ?l1)  (unPictured ?p))
+   :effect (and (pictured ?p) (not (unPictured ?p)))
 
    )
 
 )
+

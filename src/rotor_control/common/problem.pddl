@@ -7,23 +7,6 @@
 )
 (:init
     (checked location00)
-    
-    (unPictured location00)
-    (unPictured location01)
-    (unPictured location02)
-    (unPictured location03)
-    (unPictured location10)
-    (unPictured location11)
-    (unPictured location12)
-    (unPictured location13)
-    (unPictured location20)
-    (unPictured location21)
-    (unPictured location22)
-    (unPictured location23)
-    (unPictured location30)
-    (unPictured location31)
-    (unPictured location32)
-    (unPictured location33)
 
     (unchecked location01)
     (unchecked location02)
@@ -40,6 +23,11 @@
     (unchecked location31)
     (unchecked location32)
     (unchecked location33)
+
+
+    (unpictured person1)
+    (unpictured person2)
+    (unpictured person3)
 
     (locationadjust location00 location01)
     (locationadjust location00 location10)
@@ -128,6 +116,10 @@
 
     (at_d drone location00)
 
+    (at_p person1 location12)
+    (at_p person2 location10)
+    (at_p person3 location31)
+
     (containobst location01)
 
     (notcontainobst location00)
@@ -151,23 +143,9 @@
 
 )
 (:goal (and
-
-    (pictured location00)
-    (pictured location02)
-    (pictured location03)
-    (pictured location10)
-    (pictured location11)
-    (pictured location12)
-    (pictured location13)
-    (pictured location20)
-    (pictured location21)
-    (pictured location22)
-    (pictured location23)
-    (pictured location30)
-    (pictured location31)
-    (pictured location32)
-    (pictured location33)
-   
+    (pictured person1)
+    (pictured person2)
+    (pictured person3)
     (checked location00)
     (checked location02)
     (checked location03)
