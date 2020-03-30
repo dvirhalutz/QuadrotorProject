@@ -166,51 +166,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/rule
-
-# Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/rule
-
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_HeadingCommand
-
-# fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_HeadingCommand/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/rule
-
-# Convenience name for target.
-cvg_sim_msgs_genpy: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/rule
-
-.PHONY : cvg_sim_msgs_genpy
-
-# fast build rule for target.
-cvg_sim_msgs_genpy/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/build
-.PHONY : cvg_sim_msgs_genpy/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/rule
-
-# Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_MotorCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/rule
-
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_MotorCommand
-
-# fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_MotorCommand/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_MotorCommand/fast
-
-# Convenience name for target.
 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ControllerState.dir/rule:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ControllerState.dir/rule
 .PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ControllerState.dir/rule
@@ -286,6 +241,51 @@ _cvg_sim_msgs_generate_messages_check_deps_MotorStatus/fast:
 .PHONY : _cvg_sim_msgs_generate_messages_check_deps_MotorStatus/fast
 
 # Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/rule
+
+# Convenience name for target.
+_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/rule
+
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_ThrustCommand
+
+# fast build rule for target.
+_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_ThrustCommand/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+cvg_sim_msgs_generate_messages_nodejs: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : cvg_sim_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+cvg_sim_msgs_generate_messages_nodejs/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/build
+.PHONY : cvg_sim_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/rule
+
+# Convenience name for target.
+_cvg_sim_msgs_generate_messages_check_deps_MotorPWM: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/rule
+
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_MotorPWM
+
+# fast build rule for target.
+_cvg_sim_msgs_generate_messages_check_deps_MotorPWM/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_MotorPWM/fast
+
+# Convenience name for target.
 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityZCommand.dir/rule:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityZCommand.dir/rule
 .PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityZCommand.dir/rule
@@ -316,34 +316,94 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/rule
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/rule
+cvg_sim_msgs_generate_messages_py: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/rule
 
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand
+.PHONY : cvg_sim_msgs_generate_messages_py
 
 # fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand/fast
+cvg_sim_msgs_generate_messages_py/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/build
+.PHONY : cvg_sim_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/rule
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/rule
 
 # Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_Supply: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/rule
+_cvg_sim_msgs_generate_messages_check_deps_Compass: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/rule
 
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Supply
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Compass
 
 # fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_Supply/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Supply/fast
+_cvg_sim_msgs_generate_messages_check_deps_Compass/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Compass/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/rule
+
+# Convenience name for target.
+_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/rule
+
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_YawrateCommand
+
+# fast build rule for target.
+_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_YawrateCommand/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/rule
+
+# Convenience name for target.
+_cvg_sim_msgs_generate_messages_check_deps_Altitude: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/rule
+
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Altitude
+
+# fast build rule for target.
+_cvg_sim_msgs_generate_messages_check_deps_Altitude/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Altitude/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/rule
+
+# Convenience name for target.
+cvg_sim_msgs_genlisp: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/rule
+
+.PHONY : cvg_sim_msgs_genlisp
+
+# fast build rule for target.
+cvg_sim_msgs_genlisp/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/build
+.PHONY : cvg_sim_msgs_genlisp/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/rule
+
+# Convenience name for target.
+_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/rule
+
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand
+
+# fast build rule for target.
+_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand/fast
 
 # Convenience name for target.
 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages.dir/rule:
@@ -376,49 +436,19 @@ _cvg_sim_msgs_generate_messages_check_deps_RawImu/fast:
 .PHONY : _cvg_sim_msgs_generate_messages_check_deps_RawImu/fast
 
 # Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/rule
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/rule
 
 # Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_Altimeter: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/rule
+_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/rule
 
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Altimeter
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand
 
 # fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_Altimeter/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Altimeter/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/rule
-
-# Convenience name for target.
-cvg_sim_msgs_gennodejs: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/rule
-
-.PHONY : cvg_sim_msgs_gennodejs
-
-# fast build rule for target.
-cvg_sim_msgs_gennodejs/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/build
-.PHONY : cvg_sim_msgs_gennodejs/fast
+_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand/fast
 
 # Convenience name for target.
 tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
@@ -496,34 +526,19 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/rule
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/rule
 
 # Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/rule
+_cvg_sim_msgs_generate_messages_check_deps_MotorCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/rule
 
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_MotorCommand
 
 # fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/rule
-
-# Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_MotorPWM: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/rule
-
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_MotorPWM
-
-# fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_MotorPWM/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorPWM.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_MotorPWM/fast
+_cvg_sim_msgs_generate_messages_check_deps_MotorCommand/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_MotorCommand.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_MotorCommand/fast
 
 # Convenience name for target.
 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeightCommand.dir/rule:
@@ -541,6 +556,96 @@ _cvg_sim_msgs_generate_messages_check_deps_HeightCommand/fast:
 .PHONY : _cvg_sim_msgs_generate_messages_check_deps_HeightCommand/fast
 
 # Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/rule
+
+# Convenience name for target.
+_cvg_sim_msgs_generate_messages_check_deps_Altimeter: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/rule
+
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Altimeter
+
+# fast build rule for target.
+_cvg_sim_msgs_generate_messages_check_deps_Altimeter/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altimeter.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Altimeter/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/rule
+
+# Convenience name for target.
+cvg_sim_msgs_gennodejs: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/rule
+
+.PHONY : cvg_sim_msgs_gennodejs
+
+# fast build rule for target.
+cvg_sim_msgs_gennodejs/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gennodejs.dir/build
+.PHONY : cvg_sim_msgs_gennodejs/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/rule
+
+# Convenience name for target.
+_cvg_sim_msgs_generate_messages_check_deps_Supply: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/rule
+
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Supply
+
+# fast build rule for target.
+_cvg_sim_msgs_generate_messages_check_deps_Supply/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Supply.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Supply/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+cvg_sim_msgs_generate_messages_lisp: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : cvg_sim_msgs_generate_messages_lisp
+
+# fast build rule for target.
+cvg_sim_msgs_generate_messages_lisp/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/build
+.PHONY : cvg_sim_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ServoCommand.dir/rule:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ServoCommand.dir/rule
 .PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ServoCommand.dir/rule
@@ -556,34 +661,49 @@ _cvg_sim_msgs_generate_messages_check_deps_ServoCommand/fast:
 .PHONY : _cvg_sim_msgs_generate_messages_check_deps_ServoCommand/fast
 
 # Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/rule
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/rule
 
 # Convenience name for target.
-cvg_sim_msgs_generate_messages_py: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/rule
+_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/rule
 
-.PHONY : cvg_sim_msgs_generate_messages_py
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_RawMagnetic
 
 # fast build rule for target.
-cvg_sim_msgs_generate_messages_py/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_py.dir/build
-.PHONY : cvg_sim_msgs_generate_messages_py/fast
+_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_RawMagnetic/fast
 
 # Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/rule
+tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/rule
 
 # Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_Compass: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/rule
+_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/rule
 
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Compass
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_HeadingCommand
 
 # fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_Compass/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Compass.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Compass/fast
+_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_HeadingCommand.dir/build
+.PHONY : _cvg_sim_msgs_generate_messages_check_deps_HeadingCommand/fast
+
+# Convenience name for target.
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/rule
+
+# Convenience name for target.
+cvg_sim_msgs_genpy: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/rule
+
+.PHONY : cvg_sim_msgs_genpy
+
+# fast build rule for target.
+cvg_sim_msgs_genpy/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genpy.dir/build
+.PHONY : cvg_sim_msgs_genpy/fast
 
 # Convenience name for target.
 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RC.dir/rule:
@@ -616,124 +736,19 @@ cvg_sim_msgs_generate_messages_cpp/fast:
 .PHONY : cvg_sim_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/rule
+tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/rule
+std_msgs_generate_messages_nodejs: tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_YawrateCommand
+.PHONY : std_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_YawrateCommand.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_YawrateCommand/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/rule
-
-# Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_Altitude: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/rule
-
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Altitude
-
-# fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_Altitude/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_Altitude.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_Altitude/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/rule
-
-# Convenience name for target.
-cvg_sim_msgs_genlisp: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/rule
-
-.PHONY : cvg_sim_msgs_genlisp
-
-# fast build rule for target.
-cvg_sim_msgs_genlisp/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_genlisp.dir/build
-.PHONY : cvg_sim_msgs_genlisp/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/rule
-
-# Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/rule
-
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_RawMagnetic
-
-# fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_RawMagnetic.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_RawMagnetic/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/rule
-
-# Convenience name for target.
-_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/rule
-
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_ThrustCommand
-
-# fast build rule for target.
-_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_ThrustCommand.dir/build
-.PHONY : _cvg_sim_msgs_generate_messages_check_deps_ThrustCommand/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-cvg_sim_msgs_generate_messages_nodejs: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : cvg_sim_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-cvg_sim_msgs_generate_messages_nodejs/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_nodejs.dir/build
-.PHONY : cvg_sim_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-cvg_sim_msgs_generate_messages_lisp: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : cvg_sim_msgs_generate_messages_lisp
-
-# fast build rule for target.
-cvg_sim_msgs_generate_messages_lisp/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_lisp.dir/build
-.PHONY : cvg_sim_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
+std_msgs_generate_messages_nodejs/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
@@ -749,21 +764,6 @@ geometry_msgs_generate_messages_py: tum_simulator/cvg_sim_msgs/CMakeFiles/geomet
 geometry_msgs_generate_messages_py/fast:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make tum_simulator/cvg_sim_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_gencpp.dir/rule:
@@ -819,48 +819,48 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_HeadingCommand"
-	@echo "... cvg_sim_msgs_genpy"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_MotorCommand"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_ControllerState"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_PositionXYCommand"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_RawRC"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_RuddersCommand"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_MotorStatus"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_ThrustCommand"
+	@echo "... cvg_sim_msgs_generate_messages_nodejs"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_MotorPWM"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_VelocityZCommand"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_Supply"
+	@echo "... cvg_sim_msgs_generate_messages_py"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_Compass"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_YawrateCommand"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_Altitude"
+	@echo "... cvg_sim_msgs_genlisp"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand"
 	@echo "... cvg_sim_msgs_generate_messages"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_RawImu"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_Altimeter"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... cvg_sim_msgs_gennodejs"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... install"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_VelocityXYCommand"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_MotorPWM"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_MotorCommand"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_HeightCommand"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_Altimeter"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... cvg_sim_msgs_gennodejs"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_Supply"
+	@echo "... test"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... cvg_sim_msgs_generate_messages_lisp"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_ServoCommand"
-	@echo "... cvg_sim_msgs_generate_messages_py"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_Compass"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_RawMagnetic"
+	@echo "... _cvg_sim_msgs_generate_messages_check_deps_HeadingCommand"
+	@echo "... cvg_sim_msgs_genpy"
 	@echo "... _cvg_sim_msgs_generate_messages_check_deps_RC"
 	@echo "... cvg_sim_msgs_generate_messages_cpp"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_YawrateCommand"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_Altitude"
-	@echo "... cvg_sim_msgs_genlisp"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_RawMagnetic"
-	@echo "... _cvg_sim_msgs_generate_messages_check_deps_ThrustCommand"
-	@echo "... cvg_sim_msgs_generate_messages_nodejs"
-	@echo "... cvg_sim_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... test"
-	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... cvg_sim_msgs_gencpp"
 	@echo "... cvg_sim_msgs_generate_messages_eus"
 	@echo "... cvg_sim_msgs_geneus"

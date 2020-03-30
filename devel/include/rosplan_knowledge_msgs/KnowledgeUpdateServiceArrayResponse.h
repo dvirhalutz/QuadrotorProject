@@ -70,22 +70,22 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg'], 'diagnostic_msgs': ['/opt/ros/kinetic/share/diagnostic_msgs/cmake/../msg'], 'rosplan_knowledge_msgs': ['/home/dvir/catkin_ws/src/rosplan/rosplan_knowledge_msgs/msg']}
+// BOOLTRAITS {'HasHeader': False, 'IsMessage': True, 'IsFixedSize': True}
+// {'diagnostic_msgs': ['/opt/ros/kinetic/share/diagnostic_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'rosplan_knowledge_msgs': ['/home/dvir/catkin_ws/src/rosplan/rosplan_knowledge_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
+// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
 
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::rosplan_knowledge_msgs::KnowledgeUpdateServiceArrayResponse_<ContainerAllocator> >
-  : TrueType
+struct HasHeader< ::rosplan_knowledge_msgs::KnowledgeUpdateServiceArrayResponse_<ContainerAllocator> >
+  : FalseType
   { };
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::rosplan_knowledge_msgs::KnowledgeUpdateServiceArrayResponse_<ContainerAllocator> const>
-  : TrueType
+struct HasHeader< ::rosplan_knowledge_msgs::KnowledgeUpdateServiceArrayResponse_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -99,13 +99,13 @@ struct IsMessage< ::rosplan_knowledge_msgs::KnowledgeUpdateServiceArrayResponse_
   { };
 
 template <class ContainerAllocator>
-struct HasHeader< ::rosplan_knowledge_msgs::KnowledgeUpdateServiceArrayResponse_<ContainerAllocator> >
-  : FalseType
+struct IsFixedSize< ::rosplan_knowledge_msgs::KnowledgeUpdateServiceArrayResponse_<ContainerAllocator> >
+  : TrueType
   { };
 
 template <class ContainerAllocator>
-struct HasHeader< ::rosplan_knowledge_msgs::KnowledgeUpdateServiceArrayResponse_<ContainerAllocator> const>
-  : FalseType
+struct IsFixedSize< ::rosplan_knowledge_msgs::KnowledgeUpdateServiceArrayResponse_<ContainerAllocator> const>
+  : TrueType
   { };
 
 

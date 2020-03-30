@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 include rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveActionGoal.dir/progress.make
 
 rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveActionGoal:
-	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotor_control /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionGoal.msg rotor_control/qrotorMoveGoal:actionlib_msgs/GoalID:std_msgs/Header
+	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotor_control /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionGoal.msg rotor_control/qrotorMoveGoal:std_msgs/Header:actionlib_msgs/GoalID
 
 _rotor_control_generate_messages_check_deps_qrotorMoveActionGoal: rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveActionGoal
 _rotor_control_generate_messages_check_deps_qrotorMoveActionGoal: rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveActionGoal.dir/build.make

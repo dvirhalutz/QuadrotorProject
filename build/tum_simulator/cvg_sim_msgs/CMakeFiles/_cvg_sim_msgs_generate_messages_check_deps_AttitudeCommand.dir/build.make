@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 include tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/progress.make
 
 tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand:
-	cd /home/dvir/catkin_ws/build/tum_simulator/cvg_sim_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cvg_sim_msgs /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/AttitudeCommand.msg std_msgs/Header
+	cd /home/dvir/catkin_ws/build/tum_simulator/cvg_sim_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cvg_sim_msgs /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/AttitudeCommand.msg std_msgs/Header
 
 _cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand
 _cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand: tum_simulator/cvg_sim_msgs/CMakeFiles/_cvg_sim_msgs_generate_messages_check_deps_AttitudeCommand.dir/build.make

@@ -53,52 +53,52 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 # Include the progress variables for this target.
 include occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_eus.dir/progress.make
 
+occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l
 occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l
 occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l
-occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l
 occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/manifest.l
 
 
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/NavigationFunction.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/share/nav_msgs/msg/MapMetaData.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from occupancy_grid_utils/NavigationFunction.msg"
+	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/NavigationFunction.msg -Ioccupancy_grid_utils:/home/dvir/catkin_ws/src/occupancy_grid_utils/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Inav_msgs:/opt/ros/kinetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p occupancy_grid_utils -o /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg
+
 /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/LocalizedCloud.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/sensor_msgs/msg/PointCloud.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point32.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
 /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/sensor_msgs/msg/ChannelFloat32.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from occupancy_grid_utils/LocalizedCloud.msg"
-	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/LocalizedCloud.msg -Ioccupancy_grid_utils:/home/dvir/catkin_ws/src/occupancy_grid_utils/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Inav_msgs:/opt/ros/kinetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p occupancy_grid_utils -o /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point32.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/sensor_msgs/msg/PointCloud.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from occupancy_grid_utils/LocalizedCloud.msg"
+	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/LocalizedCloud.msg -Ioccupancy_grid_utils:/home/dvir/catkin_ws/src/occupancy_grid_utils/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Inav_msgs:/opt/ros/kinetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p occupancy_grid_utils -o /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg
 
 /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/OverlayClouds.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/nav_msgs/msg/MapMetaData.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/nav_msgs/msg/OccupancyGrid.msg
 /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from occupancy_grid_utils/OverlayClouds.msg"
-	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/OverlayClouds.msg -Ioccupancy_grid_utils:/home/dvir/catkin_ws/src/occupancy_grid_utils/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Inav_msgs:/opt/ros/kinetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p occupancy_grid_utils -o /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg
-
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/NavigationFunction.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/share/nav_msgs/msg/MapMetaData.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
-/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from occupancy_grid_utils/NavigationFunction.msg"
-	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/NavigationFunction.msg -Ioccupancy_grid_utils:/home/dvir/catkin_ws/src/occupancy_grid_utils/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Inav_msgs:/opt/ros/kinetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p occupancy_grid_utils -o /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/nav_msgs/msg/MapMetaData.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/nav_msgs/msg/OccupancyGrid.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from occupancy_grid_utils/OverlayClouds.msg"
+	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/OverlayClouds.msg -Ioccupancy_grid_utils:/home/dvir/catkin_ws/src/occupancy_grid_utils/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Inav_msgs:/opt/ros/kinetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p occupancy_grid_utils -o /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg
 
 /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for occupancy_grid_utils"
-	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils occupancy_grid_utils geometry_msgs sensor_msgs nav_msgs
+	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils occupancy_grid_utils geometry_msgs sensor_msgs nav_msgs
 
 occupancy_grid_utils_generate_messages_eus: occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_eus
+occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l
 occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/LocalizedCloud.l
 occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/OverlayClouds.l
-occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/msg/NavigationFunction.l
 occupancy_grid_utils_generate_messages_eus: /home/dvir/catkin_ws/devel/share/roseus/ros/occupancy_grid_utils/manifest.l
 occupancy_grid_utils_generate_messages_eus: occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_eus.dir/build.make
 

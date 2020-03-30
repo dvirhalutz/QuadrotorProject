@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 include rosplan/rosplan_dispatch_msgs/CMakeFiles/_rosplan_dispatch_msgs_generate_messages_check_deps_DispatchService.dir/progress.make
 
 rosplan/rosplan_dispatch_msgs/CMakeFiles/_rosplan_dispatch_msgs_generate_messages_check_deps_DispatchService:
-	cd /home/dvir/catkin_ws/build/rosplan/rosplan_dispatch_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosplan_dispatch_msgs /home/dvir/catkin_ws/src/rosplan/rosplan_dispatch_msgs/srv/DispatchService.srv 
+	cd /home/dvir/catkin_ws/build/rosplan/rosplan_dispatch_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosplan_dispatch_msgs /home/dvir/catkin_ws/src/rosplan/rosplan_dispatch_msgs/srv/DispatchService.srv 
 
 _rosplan_dispatch_msgs_generate_messages_check_deps_DispatchService: rosplan/rosplan_dispatch_msgs/CMakeFiles/_rosplan_dispatch_msgs_generate_messages_check_deps_DispatchService
 _rosplan_dispatch_msgs_generate_messages_check_deps_DispatchService: rosplan/rosplan_dispatch_msgs/CMakeFiles/_rosplan_dispatch_msgs_generate_messages_check_deps_DispatchService.dir/build.make

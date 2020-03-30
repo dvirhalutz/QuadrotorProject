@@ -99,17 +99,6 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -132,6 +121,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -181,21 +181,6 @@ move_client/fast:
 .PHONY : move_client/fast
 
 # Convenience name for target.
-actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/rule
-.PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/rule
-
-# Convenience name for target.
-_actionlib_tut_generate_messages_check_deps_moveResult: actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/rule
-
-.PHONY : _actionlib_tut_generate_messages_check_deps_moveResult
-
-# fast build rule for target.
-_actionlib_tut_generate_messages_check_deps_moveResult/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/build.make actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/build
-.PHONY : _actionlib_tut_generate_messages_check_deps_moveResult/fast
-
-# Convenience name for target.
 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveFeedback.dir/rule:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveFeedback.dir/rule
 .PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveFeedback.dir/rule
@@ -241,34 +226,19 @@ actionlib_generate_messages_lisp/fast:
 .PHONY : actionlib_generate_messages_lisp/fast
 
 # Convenience name for target.
-actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/rule
-.PHONY : actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/rule
+actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/rule
+.PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/rule
 
 # Convenience name for target.
-actionlib_tut_gencpp: actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/rule
+_actionlib_tut_generate_messages_check_deps_moveActionFeedback: actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/rule
 
-.PHONY : actionlib_tut_gencpp
+.PHONY : _actionlib_tut_generate_messages_check_deps_moveActionFeedback
 
 # fast build rule for target.
-actionlib_tut_gencpp/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/build.make actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/build
-.PHONY : actionlib_tut_gencpp/fast
-
-# Convenience name for target.
-actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_cpp: actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-
-.PHONY : actionlib_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
+_actionlib_tut_generate_messages_check_deps_moveActionFeedback/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/build.make actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/build
+.PHONY : _actionlib_tut_generate_messages_check_deps_moveActionFeedback/fast
 
 # Convenience name for target.
 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionResult.dir/rule:
@@ -286,49 +256,34 @@ _actionlib_tut_generate_messages_check_deps_moveActionResult/fast:
 .PHONY : _actionlib_tut_generate_messages_check_deps_moveActionResult/fast
 
 # Convenience name for target.
-actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/rule
-.PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/rule
+actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/rule
+.PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/rule
 
 # Convenience name for target.
-_actionlib_tut_generate_messages_check_deps_moveActionFeedback: actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/rule
+_actionlib_tut_generate_messages_check_deps_moveGoal: actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/rule
 
-.PHONY : _actionlib_tut_generate_messages_check_deps_moveActionFeedback
+.PHONY : _actionlib_tut_generate_messages_check_deps_moveGoal
 
 # fast build rule for target.
-_actionlib_tut_generate_messages_check_deps_moveActionFeedback/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/build.make actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionFeedback.dir/build
-.PHONY : _actionlib_tut_generate_messages_check_deps_moveActionFeedback/fast
+_actionlib_tut_generate_messages_check_deps_moveGoal/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/build.make actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/build
+.PHONY : _actionlib_tut_generate_messages_check_deps_moveGoal/fast
 
 # Convenience name for target.
-actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/rule
-.PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/rule
+actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+.PHONY : actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-_actionlib_tut_generate_messages_check_deps_moveActionGoal: actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/rule
+actionlib_generate_messages_cpp: actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 
-.PHONY : _actionlib_tut_generate_messages_check_deps_moveActionGoal
+.PHONY : actionlib_generate_messages_cpp
 
 # fast build rule for target.
-_actionlib_tut_generate_messages_check_deps_moveActionGoal/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/build.make actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/build
-.PHONY : _actionlib_tut_generate_messages_check_deps_moveActionGoal/fast
-
-# Convenience name for target.
-actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/rule
-.PHONY : actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/rule
-
-# Convenience name for target.
-actionlib_tut_generate_messages: actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/rule
-
-.PHONY : actionlib_tut_generate_messages
-
-# fast build rule for target.
-actionlib_tut_generate_messages/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/build.make actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/build
-.PHONY : actionlib_tut_generate_messages/fast
+actionlib_generate_messages_cpp/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make actionlib_tut/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
 actionlib_tut/CMakeFiles/actionlib_tut_gennodejs.dir/rule:
@@ -376,21 +331,6 @@ actionlib_generate_messages_nodejs/fast:
 .PHONY : actionlib_generate_messages_nodejs/fast
 
 # Convenience name for target.
-actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/rule
-.PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/rule
-
-# Convenience name for target.
-_actionlib_tut_generate_messages_check_deps_moveGoal: actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/rule
-
-.PHONY : _actionlib_tut_generate_messages_check_deps_moveGoal
-
-# fast build rule for target.
-_actionlib_tut_generate_messages_check_deps_moveGoal/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/build.make actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveGoal.dir/build
-.PHONY : _actionlib_tut_generate_messages_check_deps_moveGoal/fast
-
-# Convenience name for target.
 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveAction.dir/rule:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveAction.dir/rule
 .PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveAction.dir/rule
@@ -404,6 +344,66 @@ _actionlib_tut_generate_messages_check_deps_moveAction: actionlib_tut/CMakeFiles
 _actionlib_tut_generate_messages_check_deps_moveAction/fast:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveAction.dir/build.make actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveAction.dir/build
 .PHONY : _actionlib_tut_generate_messages_check_deps_moveAction/fast
+
+# Convenience name for target.
+actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/rule
+.PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/rule
+
+# Convenience name for target.
+_actionlib_tut_generate_messages_check_deps_moveResult: actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/rule
+
+.PHONY : _actionlib_tut_generate_messages_check_deps_moveResult
+
+# fast build rule for target.
+_actionlib_tut_generate_messages_check_deps_moveResult/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/build.make actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveResult.dir/build
+.PHONY : _actionlib_tut_generate_messages_check_deps_moveResult/fast
+
+# Convenience name for target.
+actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/rule
+.PHONY : actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/rule
+
+# Convenience name for target.
+actionlib_tut_generate_messages: actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/rule
+
+.PHONY : actionlib_tut_generate_messages
+
+# fast build rule for target.
+actionlib_tut_generate_messages/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/build.make actionlib_tut/CMakeFiles/actionlib_tut_generate_messages.dir/build
+.PHONY : actionlib_tut_generate_messages/fast
+
+# Convenience name for target.
+actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/rule
+.PHONY : actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/rule
+
+# Convenience name for target.
+_actionlib_tut_generate_messages_check_deps_moveActionGoal: actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/rule
+
+.PHONY : _actionlib_tut_generate_messages_check_deps_moveActionGoal
+
+# fast build rule for target.
+_actionlib_tut_generate_messages_check_deps_moveActionGoal/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/build.make actionlib_tut/CMakeFiles/_actionlib_tut_generate_messages_check_deps_moveActionGoal.dir/build
+.PHONY : _actionlib_tut_generate_messages_check_deps_moveActionGoal/fast
+
+# Convenience name for target.
+actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/rule
+.PHONY : actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/rule
+
+# Convenience name for target.
+actionlib_tut_gencpp: actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/rule
+
+.PHONY : actionlib_tut_gencpp
+
+# fast build rule for target.
+actionlib_tut_gencpp/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/build.make actionlib_tut/CMakeFiles/actionlib_tut_gencpp.dir/build
+.PHONY : actionlib_tut_gencpp/fast
 
 # Convenience name for target.
 actionlib_tut/CMakeFiles/actionlib_tut_generate_messages_cpp.dir/rule:
@@ -563,24 +563,24 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... move_client"
-	@echo "... _actionlib_tut_generate_messages_check_deps_moveResult"
 	@echo "... _actionlib_tut_generate_messages_check_deps_moveFeedback"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"
-	@echo "... actionlib_tut_gencpp"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... _actionlib_tut_generate_messages_check_deps_moveActionResult"
 	@echo "... _actionlib_tut_generate_messages_check_deps_moveActionFeedback"
-	@echo "... test"
-	@echo "... _actionlib_tut_generate_messages_check_deps_moveActionGoal"
-	@echo "... actionlib_tut_generate_messages"
+	@echo "... _actionlib_tut_generate_messages_check_deps_moveActionResult"
+	@echo "... _actionlib_tut_generate_messages_check_deps_moveGoal"
+	@echo "... actionlib_generate_messages_cpp"
 	@echo "... install"
 	@echo "... actionlib_tut_gennodejs"
 	@echo "... rebuild_cache"
 	@echo "... actionlib_tut_genpy"
 	@echo "... actionlib_generate_messages_nodejs"
-	@echo "... _actionlib_tut_generate_messages_check_deps_moveGoal"
 	@echo "... _actionlib_tut_generate_messages_check_deps_moveAction"
+	@echo "... _actionlib_tut_generate_messages_check_deps_moveResult"
+	@echo "... test"
+	@echo "... actionlib_tut_generate_messages"
+	@echo "... _actionlib_tut_generate_messages_check_deps_moveActionGoal"
+	@echo "... actionlib_tut_gencpp"
 	@echo "... actionlib_tut_generate_messages_cpp"
 	@echo "... actionlib_tut_generate_messages_eus"
 	@echo "... actionlib_tut_generate_messages_nodejs"

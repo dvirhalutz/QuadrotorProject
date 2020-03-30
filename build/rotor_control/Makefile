@@ -89,16 +89,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target install/local
-install/local/fast: install/local
+# Special rule for the target test
+test/fast: test
 
-.PHONY : install/local/fast
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -111,16 +111,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : test/fast
+.PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -226,21 +226,6 @@ rotor_control_generate_messages/fast:
 .PHONY : rotor_control_generate_messages/fast
 
 # Convenience name for target.
-rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/rule
-.PHONY : rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/rule
-
-# Convenience name for target.
-_rotor_control_generate_messages_check_deps_qrotorMoveResult: rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/rule
-
-.PHONY : _rotor_control_generate_messages_check_deps_qrotorMoveResult
-
-# fast build rule for target.
-_rotor_control_generate_messages_check_deps_qrotorMoveResult/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/build.make rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/build
-.PHONY : _rotor_control_generate_messages_check_deps_qrotorMoveResult/fast
-
-# Convenience name for target.
 rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveActionGoal.dir/rule:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveActionGoal.dir/rule
 .PHONY : rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveActionGoal.dir/rule
@@ -254,6 +239,21 @@ _rotor_control_generate_messages_check_deps_qrotorMoveActionGoal: rotor_control/
 _rotor_control_generate_messages_check_deps_qrotorMoveActionGoal/fast:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveActionGoal.dir/build.make rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveActionGoal.dir/build
 .PHONY : _rotor_control_generate_messages_check_deps_qrotorMoveActionGoal/fast
+
+# Convenience name for target.
+rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/rule
+.PHONY : rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/rule
+
+# Convenience name for target.
+_rotor_control_generate_messages_check_deps_qrotorMoveResult: rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/rule
+
+.PHONY : _rotor_control_generate_messages_check_deps_qrotorMoveResult
+
+# fast build rule for target.
+_rotor_control_generate_messages_check_deps_qrotorMoveResult/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/build.make rotor_control/CMakeFiles/_rotor_control_generate_messages_check_deps_qrotorMoveResult.dir/build
+.PHONY : _rotor_control_generate_messages_check_deps_qrotorMoveResult/fast
 
 # Convenience name for target.
 rotor_control/CMakeFiles/rotor_control_generate_messages_eus.dir/rule:
@@ -444,15 +444,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
-	@echo "... install/local"
 	@echo "... _rotor_control_generate_messages_check_deps_qrotorMoveFeedback"
+	@echo "... test"
 	@echo "... rotor_control_gencpp"
 	@echo "... rotor_control_genlisp"
 	@echo "... rotor_control_generate_messages"
 	@echo "... edit_cache"
-	@echo "... _rotor_control_generate_messages_check_deps_qrotorMoveResult"
+	@echo "... install/local"
 	@echo "... _rotor_control_generate_messages_check_deps_qrotorMoveActionGoal"
-	@echo "... test"
+	@echo "... _rotor_control_generate_messages_check_deps_qrotorMoveResult"
 	@echo "... rotor_control_generate_messages_eus"
 	@echo "... rotor_control_geneus"
 	@echo "... _rotor_control_generate_messages_check_deps_qrotorMoveAction"

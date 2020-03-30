@@ -92,10 +92,10 @@ KnowledgeBaseTests_EXTERNAL_OBJECTS =
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: rosplan/rosplan_knowledge_base/CMakeFiles/KnowledgeBaseTests.dir/build.make
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: gtest/gtest/libgtest.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /opt/ros/kinetic/lib/libtf.so
-/home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /home/dvir/catkin_ws/devel/lib/libtf2_ros.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /opt/ros/kinetic/lib/libactionlib.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /opt/ros/kinetic/lib/libtf2.so
+/home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /home/dvir/catkin_ws/devel/lib/libtf2.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /home/dvir/catkin_ws/devel/lib/librddl_parser.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /home/dvir/catkin_ws/devel/lib/libippc_server.so
 /home/dvir/catkin_ws/devel/lib/rosplan_knowledge_base/KnowledgeBaseTests: /home/dvir/catkin_ws/devel/lib/libppddl_parser.so

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 include rosplan/rosplan_knowledge_msgs/CMakeFiles/_rosplan_knowledge_msgs_generate_messages_check_deps_GetDomainAttributeService.dir/progress.make
 
 rosplan/rosplan_knowledge_msgs/CMakeFiles/_rosplan_knowledge_msgs_generate_messages_check_deps_GetDomainAttributeService:
-	cd /home/dvir/catkin_ws/build/rosplan/rosplan_knowledge_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosplan_knowledge_msgs /home/dvir/catkin_ws/src/rosplan/rosplan_knowledge_msgs/srv/GetDomainAttributeService.srv diagnostic_msgs/KeyValue:rosplan_knowledge_msgs/DomainFormula
+	cd /home/dvir/catkin_ws/build/rosplan/rosplan_knowledge_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosplan_knowledge_msgs /home/dvir/catkin_ws/src/rosplan/rosplan_knowledge_msgs/srv/GetDomainAttributeService.srv rosplan_knowledge_msgs/DomainFormula:diagnostic_msgs/KeyValue
 
 _rosplan_knowledge_msgs_generate_messages_check_deps_GetDomainAttributeService: rosplan/rosplan_knowledge_msgs/CMakeFiles/_rosplan_knowledge_msgs_generate_messages_check_deps_GetDomainAttributeService
 _rosplan_knowledge_msgs_generate_messages_check_deps_GetDomainAttributeService: rosplan/rosplan_knowledge_msgs/CMakeFiles/_rosplan_knowledge_msgs_generate_messages_check_deps_GetDomainAttributeService.dir/build.make

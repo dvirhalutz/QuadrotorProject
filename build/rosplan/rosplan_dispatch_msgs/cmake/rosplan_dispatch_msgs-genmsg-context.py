@@ -6,6 +6,6 @@ pkg_name = "rosplan_dispatch_msgs"
 dependencies_str = "actionlib_msgs;diagnostic_msgs;std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"
 dep_include_paths_str = "rosplan_dispatch_msgs;/home/dvir/catkin_ws/src/rosplan/rosplan_dispatch_msgs/msg;rosplan_dispatch_msgs;/home/dvir/catkin_ws/devel/share/rosplan_dispatch_msgs/msg;actionlib_msgs;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg;diagnostic_msgs;/opt/ros/kinetic/share/diagnostic_msgs/cmake/../msg;std_msgs;/opt/ros/kinetic/share/std_msgs/cmake/../msg"
-PYTHON_EXECUTABLE = "/usr/bin/python"
+PYTHON_EXECUTABLE = "/usr/bin/python3"
 package_has_static_sources = '' == 'TRUE'
 genmsg_check_deps_script = "/opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

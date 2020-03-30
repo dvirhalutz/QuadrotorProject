@@ -70,21 +70,21 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'actionlib_msgs': ['/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg'], 'rotor_control': ['/home/dvir/catkin_ws/devel/share/rotor_control/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
+// BOOLTRAITS {'HasHeader': False, 'IsMessage': True, 'IsFixedSize': False}
+// {'actionlib_msgs': ['/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'rotor_control': ['/home/dvir/catkin_ws/devel/share/rotor_control/msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
+// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
 
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::rotor_control::qrotorMoveResult_<ContainerAllocator> >
+struct HasHeader< ::rotor_control::qrotorMoveResult_<ContainerAllocator> >
   : FalseType
   { };
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::rotor_control::qrotorMoveResult_<ContainerAllocator> const>
+struct HasHeader< ::rotor_control::qrotorMoveResult_<ContainerAllocator> const>
   : FalseType
   { };
 
@@ -99,12 +99,12 @@ struct IsMessage< ::rotor_control::qrotorMoveResult_<ContainerAllocator> const>
   { };
 
 template <class ContainerAllocator>
-struct HasHeader< ::rotor_control::qrotorMoveResult_<ContainerAllocator> >
+struct IsFixedSize< ::rotor_control::qrotorMoveResult_<ContainerAllocator> >
   : FalseType
   { };
 
 template <class ContainerAllocator>
-struct HasHeader< ::rotor_control::qrotorMoveResult_<ContainerAllocator> const>
+struct IsFixedSize< ::rotor_control::qrotorMoveResult_<ContainerAllocator> const>
   : FalseType
   { };
 

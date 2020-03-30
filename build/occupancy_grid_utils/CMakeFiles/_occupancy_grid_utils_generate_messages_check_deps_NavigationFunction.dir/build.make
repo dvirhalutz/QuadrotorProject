@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 include occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_NavigationFunction.dir/progress.make
 
 occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_NavigationFunction:
-	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py occupancy_grid_utils /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/NavigationFunction.msg nav_msgs/MapMetaData:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion
+	cd /home/dvir/catkin_ws/build/occupancy_grid_utils && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py occupancy_grid_utils /home/dvir/catkin_ws/src/occupancy_grid_utils/msg/NavigationFunction.msg geometry_msgs/Pose:nav_msgs/MapMetaData:geometry_msgs/Quaternion:geometry_msgs/Point
 
 _occupancy_grid_utils_generate_messages_check_deps_NavigationFunction: occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_NavigationFunction
 _occupancy_grid_utils_generate_messages_check_deps_NavigationFunction: occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_NavigationFunction.dir/build.make

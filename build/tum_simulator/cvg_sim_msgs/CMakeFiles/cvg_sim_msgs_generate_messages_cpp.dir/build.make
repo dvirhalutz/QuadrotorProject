@@ -54,27 +54,27 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 include tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp.dir/progress.make
 
 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Supply.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RuddersCommand.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ControllerState.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityXYCommand.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h
 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeightCommand.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ServoCommand.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RC.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h
-tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawMagnetic.h
 tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RuddersCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ControllerState.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityXYCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeightCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ServoCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RC.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawMagnetic.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h
+tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h
 
 
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Supply.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
@@ -82,178 +82,178 @@ tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp: /home/
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Supply.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Supply.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from cvg_sim_msgs/Supply.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Supply.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Supply.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/YawrateCommand.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from cvg_sim_msgs/YawrateCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/YawrateCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorPWM.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from cvg_sim_msgs/MotorPWM.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorPWM.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorStatus.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from cvg_sim_msgs/MotorStatus.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorStatus.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
-
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/VelocityZCommand.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from cvg_sim_msgs/VelocityZCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/VelocityZCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
-
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/AttitudeCommand.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from cvg_sim_msgs/AttitudeCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/AttitudeCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
-
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawRC.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from cvg_sim_msgs/RawRC.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawRC.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ThrustCommand.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from cvg_sim_msgs/ThrustCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ThrustCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RuddersCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RuddersCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RuddersCommand.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RuddersCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RuddersCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from cvg_sim_msgs/RuddersCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RuddersCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from cvg_sim_msgs/RuddersCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RuddersCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/YawrateCommand.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from cvg_sim_msgs/YawrateCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/YawrateCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawImu.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from cvg_sim_msgs/RawImu.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawImu.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawRC.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from cvg_sim_msgs/RawRC.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawRC.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ControllerState.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ControllerState.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ControllerState.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ControllerState.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ControllerState.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from cvg_sim_msgs/ControllerState.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ControllerState.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
-
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Altimeter.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from cvg_sim_msgs/Altimeter.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Altimeter.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
-
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorCommand.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from cvg_sim_msgs/MotorCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
-
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Compass.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from cvg_sim_msgs/Compass.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Compass.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ControllerState.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityXYCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityXYCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/VelocityXYCommand.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityXYCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityXYCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from cvg_sim_msgs/VelocityXYCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/VelocityXYCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from cvg_sim_msgs/VelocityXYCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/VelocityXYCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/PositionXYCommand.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from cvg_sim_msgs/PositionXYCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/PositionXYCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/VelocityZCommand.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from cvg_sim_msgs/VelocityZCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/VelocityZCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorPWM.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from cvg_sim_msgs/MotorPWM.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorPWM.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorStatus.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from cvg_sim_msgs/MotorStatus.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorStatus.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeightCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeightCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/HeightCommand.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeightCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeightCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating C++ code from cvg_sim_msgs/HeightCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/HeightCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from cvg_sim_msgs/HeightCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/HeightCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorCommand.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from cvg_sim_msgs/MotorCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/MotorCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Altimeter.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from cvg_sim_msgs/Altimeter.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Altimeter.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/AttitudeCommand.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating C++ code from cvg_sim_msgs/AttitudeCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/AttitudeCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Compass.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating C++ code from cvg_sim_msgs/Compass.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Compass.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/PositionXYCommand.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from cvg_sim_msgs/PositionXYCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/PositionXYCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ServoCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ServoCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ServoCommand.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ServoCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ServoCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating C++ code from cvg_sim_msgs/ServoCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ServoCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
-
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/HeadingCommand.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from cvg_sim_msgs/HeadingCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/HeadingCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating C++ code from cvg_sim_msgs/ServoCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ServoCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RC.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RC.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RC.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RC.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RC.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating C++ code from cvg_sim_msgs/RC.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RC.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
-
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Altitude.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from cvg_sim_msgs/Altitude.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Altitude.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
-
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawImu.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating C++ code from cvg_sim_msgs/RawImu.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawImu.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from cvg_sim_msgs/RC.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RC.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawMagnetic.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawMagnetic.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawMagnetic.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawMagnetic.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawMagnetic.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating C++ code from cvg_sim_msgs/RawMagnetic.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawMagnetic.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating C++ code from cvg_sim_msgs/RawMagnetic.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/RawMagnetic.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ThrustCommand.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating C++ code from cvg_sim_msgs/ThrustCommand.msg"
-	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/ThrustCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/HeadingCommand.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating C++ code from cvg_sim_msgs/HeadingCommand.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/HeadingCommand.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Altitude.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating C++ code from cvg_sim_msgs/Altitude.msg"
+	cd /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs && /home/dvir/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg/Altitude.msg -Icvg_sim_msgs:/home/dvir/catkin_ws/src/tum_simulator/cvg_sim_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p cvg_sim_msgs -o /home/dvir/catkin_ws/devel/include/cvg_sim_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 cvg_sim_msgs_generate_messages_cpp: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp
 cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Supply.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RuddersCommand.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ControllerState.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityXYCommand.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h
 cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorPWM.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeightCommand.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ServoCommand.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RC.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h
-cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawMagnetic.h
 cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ThrustCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RuddersCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/YawrateCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawImu.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawRC.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ControllerState.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityXYCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/VelocityZCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorStatus.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeightCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/MotorCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altimeter.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/AttitudeCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Compass.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/PositionXYCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/ServoCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RC.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/RawMagnetic.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/HeadingCommand.h
+cvg_sim_msgs_generate_messages_cpp: /home/dvir/catkin_ws/devel/include/cvg_sim_msgs/Altitude.h
 cvg_sim_msgs_generate_messages_cpp: tum_simulator/cvg_sim_msgs/CMakeFiles/cvg_sim_msgs_generate_messages_cpp.dir/build.make
 
 .PHONY : cvg_sim_msgs_generate_messages_cpp

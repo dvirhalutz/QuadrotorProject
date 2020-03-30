@@ -226,21 +226,6 @@ occupancy_grid_utils_gencpp/fast:
 .PHONY : occupancy_grid_utils_gencpp/fast
 
 # Convenience name for target.
-occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/rule:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/rule
-.PHONY : occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-occupancy_grid_utils_generate_messages_cpp: occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/rule
-
-.PHONY : occupancy_grid_utils_generate_messages_cpp
-
-# fast build rule for target.
-occupancy_grid_utils_generate_messages_cpp/fast:
-	cd /home/dvir/catkin_ws/build && $(MAKE) -f occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/build.make occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/build
-.PHONY : occupancy_grid_utils_generate_messages_cpp/fast
-
-# Convenience name for target.
 occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_NavigationFunction.dir/rule:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_NavigationFunction.dir/rule
 .PHONY : occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_NavigationFunction.dir/rule
@@ -254,6 +239,21 @@ _occupancy_grid_utils_generate_messages_check_deps_NavigationFunction: occupancy
 _occupancy_grid_utils_generate_messages_check_deps_NavigationFunction/fast:
 	cd /home/dvir/catkin_ws/build && $(MAKE) -f occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_NavigationFunction.dir/build.make occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_NavigationFunction.dir/build
 .PHONY : _occupancy_grid_utils_generate_messages_check_deps_NavigationFunction/fast
+
+# Convenience name for target.
+occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/rule:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/rule
+.PHONY : occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+occupancy_grid_utils_generate_messages_cpp: occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/rule
+
+.PHONY : occupancy_grid_utils_generate_messages_cpp
+
+# fast build rule for target.
+occupancy_grid_utils_generate_messages_cpp/fast:
+	cd /home/dvir/catkin_ws/build && $(MAKE) -f occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/build.make occupancy_grid_utils/CMakeFiles/occupancy_grid_utils_generate_messages_cpp.dir/build
+.PHONY : occupancy_grid_utils_generate_messages_cpp/fast
 
 # Convenience name for target.
 occupancy_grid_utils/CMakeFiles/_occupancy_grid_utils_generate_messages_check_deps_LocalizedCloud.dir/rule:
@@ -675,8 +675,8 @@ help:
 	@echo "... occupancy_grid_utils_generate_messages_eus"
 	@echo "... occupancy_grid_utils_generate_messages_lisp"
 	@echo "... occupancy_grid_utils_gencpp"
-	@echo "... occupancy_grid_utils_generate_messages_cpp"
 	@echo "... _occupancy_grid_utils_generate_messages_check_deps_NavigationFunction"
+	@echo "... occupancy_grid_utils_generate_messages_cpp"
 	@echo "... _occupancy_grid_utils_generate_messages_check_deps_LocalizedCloud"
 	@echo "... occupancy_grid_utils_generate_messages_nodejs"
 	@echo "... occupancy_grid_utils_genlisp"

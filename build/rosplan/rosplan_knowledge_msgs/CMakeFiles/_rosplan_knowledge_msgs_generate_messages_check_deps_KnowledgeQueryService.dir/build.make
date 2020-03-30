@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 include rosplan/rosplan_knowledge_msgs/CMakeFiles/_rosplan_knowledge_msgs_generate_messages_check_deps_KnowledgeQueryService.dir/progress.make
 
 rosplan/rosplan_knowledge_msgs/CMakeFiles/_rosplan_knowledge_msgs_generate_messages_check_deps_KnowledgeQueryService:
-	cd /home/dvir/catkin_ws/build/rosplan/rosplan_knowledge_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosplan_knowledge_msgs /home/dvir/catkin_ws/src/rosplan/rosplan_knowledge_msgs/srv/KnowledgeQueryService.srv rosplan_knowledge_msgs/DomainFormula:rosplan_knowledge_msgs/KnowledgeItem:rosplan_knowledge_msgs/ExprComposite:diagnostic_msgs/KeyValue:rosplan_knowledge_msgs/DomainInequality:rosplan_knowledge_msgs/ExprBase
+	cd /home/dvir/catkin_ws/build/rosplan/rosplan_knowledge_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosplan_knowledge_msgs /home/dvir/catkin_ws/src/rosplan/rosplan_knowledge_msgs/srv/KnowledgeQueryService.srv rosplan_knowledge_msgs/KnowledgeItem:rosplan_knowledge_msgs/DomainInequality:rosplan_knowledge_msgs/DomainFormula:rosplan_knowledge_msgs/ExprComposite:diagnostic_msgs/KeyValue:rosplan_knowledge_msgs/ExprBase
 
 _rosplan_knowledge_msgs_generate_messages_check_deps_KnowledgeQueryService: rosplan/rosplan_knowledge_msgs/CMakeFiles/_rosplan_knowledge_msgs_generate_messages_check_deps_KnowledgeQueryService
 _rosplan_knowledge_msgs_generate_messages_check_deps_KnowledgeQueryService: rosplan/rosplan_knowledge_msgs/CMakeFiles/_rosplan_knowledge_msgs_generate_messages_check_deps_KnowledgeQueryService.dir/build.make

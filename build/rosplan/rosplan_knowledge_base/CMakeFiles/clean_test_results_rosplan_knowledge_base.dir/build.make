@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 include rosplan/rosplan_knowledge_base/CMakeFiles/clean_test_results_rosplan_knowledge_base.dir/progress.make
 
 rosplan/rosplan_knowledge_base/CMakeFiles/clean_test_results_rosplan_knowledge_base:
-	cd /home/dvir/catkin_ws/build/rosplan/rosplan_knowledge_base && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/dvir/catkin_ws/build/test_results/rosplan_knowledge_base
+	cd /home/dvir/catkin_ws/build/rosplan/rosplan_knowledge_base && /usr/bin/python3 /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/dvir/catkin_ws/build/test_results/rosplan_knowledge_base
 
 clean_test_results_rosplan_knowledge_base: rosplan/rosplan_knowledge_base/CMakeFiles/clean_test_results_rosplan_knowledge_base
 clean_test_results_rosplan_knowledge_base: rosplan/rosplan_knowledge_base/CMakeFiles/clean_test_results_rosplan_knowledge_base.dir/build.make

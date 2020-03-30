@@ -53,91 +53,91 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 # Include the progress variables for this target.
 include rotor_control/CMakeFiles/rotor_control_generate_messages_py.dir/progress.make
 
-rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py
-rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py
-rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveGoal.py
-rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py
-rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py
-rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveResult.py
-rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py
-rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py
+rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveGoal.py
+rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py
+rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py
+rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveResult.py
+rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py
+rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py
+rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py
+rotor_control/CMakeFiles/rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py
 
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionResult.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveResult.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG rotor_control/qrotorMoveActionResult"
-	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionResult.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveGoal.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveGoal.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG rotor_control/qrotorMoveGoal"
+	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveGoal.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionGoal.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveGoal.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionGoal.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveGoal.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG rotor_control/qrotorMoveActionGoal"
-	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionGoal.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg
+	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionGoal.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveGoal.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveGoal.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG rotor_control/qrotorMoveGoal"
-	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveGoal.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionResult.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveResult.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG rotor_control/qrotorMoveActionResult"
+	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionResult.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG rotor_control/qrotorMoveFeedback"
-	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveFeedback.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveResult.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveResult.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG rotor_control/qrotorMoveResult"
+	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveResult.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveAction.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveGoal.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveFeedback.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionFeedback.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionGoal.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionResult.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveResult.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveAction.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveResult.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionGoal.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionResult.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveFeedback.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionFeedback.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG rotor_control/qrotorMoveAction"
-	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveAction.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg
+	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveAction.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveResult.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveResult.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG rotor_control/qrotorMoveResult"
-	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveResult.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionFeedback.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveFeedback.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG rotor_control/qrotorMoveActionFeedback"
+	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionFeedback.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionFeedback.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveFeedback.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG rotor_control/qrotorMoveActionFeedback"
-	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveActionFeedback.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py: /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG rotor_control/qrotorMoveFeedback"
+	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dvir/catkin_ws/devel/share/rotor_control/msg/qrotorMoveFeedback.msg -Irotor_control:/home/dvir/catkin_ws/devel/share/rotor_control/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p rotor_control -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveGoal.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveResult.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveGoal.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveResult.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python msg __init__.py for rotor_control"
-	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg --initpy
+	cd /home/dvir/catkin_ws/build/rotor_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg --initpy
 
 rotor_control_generate_messages_py: rotor_control/CMakeFiles/rotor_control_generate_messages_py
-rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py
-rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py
-rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveGoal.py
-rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py
-rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveAction.py
-rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveResult.py
-rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py
-rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/rotor_control/msg/__init__.py
+rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveGoal.py
+rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionGoal.py
+rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionResult.py
+rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveResult.py
+rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveAction.py
+rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveActionFeedback.py
+rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/_qrotorMoveFeedback.py
+rotor_control_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/rotor_control/msg/__init__.py
 rotor_control_generate_messages_py: rotor_control/CMakeFiles/rotor_control_generate_messages_py.dir/build.make
 
 .PHONY : rotor_control_generate_messages_py

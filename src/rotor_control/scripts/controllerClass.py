@@ -7,7 +7,7 @@ from gazebo_msgs.srv import SetModelState, GetModelState
 from geometry_msgs.msg import Twist
 from geometry_msgs.msg import Pose
 from gazebo_msgs.msg import ModelState
-from ....ML.test import model_test
+from ML.test import model_test
 from os import walk
 import os
 
@@ -33,15 +33,15 @@ class controlQuadrotor():
 
     def moveDroneLower(self):
         # move random image from PreTesting to InTesting
-        path_to_PreTesting = "../../../photos_taken_by_quadrotor/PreTesting"
-        path_to_InTesting = "../../../photos_taken_by_quadrotor/InTesting"
+        path_to_PreTesting = "./photos_taken_by_quadrotor/PreTesting"
+        path_to_InTesting = "./photos_taken_by_quadrotor/InTesting"
         image_path, image_new_path = "", ""
         for (root, _, filename) in walk(path_to_PreTesting):
-            if filename.endswith('.jpeg'):
+            if filename.endswith('.png'):
                 image_path = os.path.join(root, filename)
                 image_new_path = os.path.join(path_to_InTesting, filename)
                 os.rename(image_path, image_new_path)
-                rospy.loginfo(f"Moved Image -> {filename}")
+                rospy.loginfo("Moved Image -> {filename}")
                 break
         if image_path == "":
             rospy.loginfo("Couldn't get the image from the folder")
@@ -58,19 +58,19 @@ class controlQuadrotor():
         if image_class == "EMPLTY":
             rospy.loginfo("Couldn't evaluate the image - Problem")
         else:
-            rospy.loginfo(f"The image has classified as: {image_class}")
+            rospy.loginfo("The image has classified as: {image_class}")
 
     def moveDroneHigher(self):
          # move image from InTesting to Done
-        path_to_InTesting = "../../../photos_taken_by_quadrotor/InTesting"
-        path_to_Done = "../../../photos_taken_by_quadrotor/Done"
+        path_to_InTesting = "./photos_taken_by_quadrotor/InTesting"
+        path_to_Done = "./photos_taken_by_quadrotor/Done"
         image_path, image_new_path = "", ""
         for (root, _, filename) in walk(path_to_InTesting):
-            if filename.endswith('.jpeg'):
+            if filename.endswith('.png'):
                 image_path = os.path.join(root, filename)
                 image_new_path = os.path.join(path_to_Done, filename)
                 os.rename(image_path, image_new_path)
-                rospy.loginfo(f"Moved Image -> {filename}")
+                rospy.loginfo("Moved Image -> {filename}")
         if image_path == "":
             rospy.loginfo("Don't have any image inside the InTesting")
 

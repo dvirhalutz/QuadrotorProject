@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/occupancy_grid_utils_generate_messages_lisp"
+  "/home/dvir/catkin_ws/devel/share/common-lisp/ros/occupancy_grid_utils/msg/NavigationFunction.lisp"
   "/home/dvir/catkin_ws/devel/share/common-lisp/ros/occupancy_grid_utils/msg/LocalizedCloud.lisp"
   "/home/dvir/catkin_ws/devel/share/common-lisp/ros/occupancy_grid_utils/msg/OverlayClouds.lisp"
-  "/home/dvir/catkin_ws/devel/share/common-lisp/ros/occupancy_grid_utils/msg/NavigationFunction.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

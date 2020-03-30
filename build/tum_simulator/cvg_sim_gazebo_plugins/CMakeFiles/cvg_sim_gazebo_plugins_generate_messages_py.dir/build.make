@@ -53,24 +53,24 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 # Include the progress variables for this target.
 include tum_simulator/cvg_sim_gazebo_plugins/CMakeFiles/cvg_sim_gazebo_plugins_generate_messages_py.dir/progress.make
 
-tum_simulator/cvg_sim_gazebo_plugins/CMakeFiles/cvg_sim_gazebo_plugins_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py
-tum_simulator/cvg_sim_gazebo_plugins/CMakeFiles/cvg_sim_gazebo_plugins_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/__init__.py
+tum_simulator/cvg_sim_gazebo_plugins/CMakeFiles/cvg_sim_gazebo_plugins_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py
+tum_simulator/cvg_sim_gazebo_plugins/CMakeFiles/cvg_sim_gazebo_plugins_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/__init__.py
 
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_gazebo_plugins/srv/SetBias.srv
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py: /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_gazebo_plugins/srv/SetBias.srv
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV cvg_sim_gazebo_plugins/SetBias"
-	cd /home/dvir/catkin_ws/build/tum_simulator/cvg_sim_gazebo_plugins && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_gazebo_plugins/srv/SetBias.srv -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/kinetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p cvg_sim_gazebo_plugins -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv
+	cd /home/dvir/catkin_ws/build/tum_simulator/cvg_sim_gazebo_plugins && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dvir/catkin_ws/src/tum_simulator/cvg_sim_gazebo_plugins/srv/SetBias.srv -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/kinetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p cvg_sim_gazebo_plugins -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv
 
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/__init__.py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/__init__.py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dvir/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for cvg_sim_gazebo_plugins"
-	cd /home/dvir/catkin_ws/build/tum_simulator/cvg_sim_gazebo_plugins && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv --initpy
+	cd /home/dvir/catkin_ws/build/tum_simulator/cvg_sim_gazebo_plugins && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv --initpy
 
 cvg_sim_gazebo_plugins_generate_messages_py: tum_simulator/cvg_sim_gazebo_plugins/CMakeFiles/cvg_sim_gazebo_plugins_generate_messages_py
-cvg_sim_gazebo_plugins_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py
-cvg_sim_gazebo_plugins_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python2.7/dist-packages/cvg_sim_gazebo_plugins/srv/__init__.py
+cvg_sim_gazebo_plugins_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/_SetBias.py
+cvg_sim_gazebo_plugins_generate_messages_py: /home/dvir/catkin_ws/devel/lib/python3/dist-packages/cvg_sim_gazebo_plugins/srv/__init__.py
 cvg_sim_gazebo_plugins_generate_messages_py: tum_simulator/cvg_sim_gazebo_plugins/CMakeFiles/cvg_sim_gazebo_plugins_generate_messages_py.dir/build.make
 
 .PHONY : cvg_sim_gazebo_plugins_generate_messages_py

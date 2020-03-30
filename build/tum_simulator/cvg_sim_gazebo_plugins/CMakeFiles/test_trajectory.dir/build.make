@@ -95,9 +95,9 @@ test_trajectory_EXTERNAL_OBJECTS =
 /home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /opt/ros/kinetic/lib/libgazebo_ros_api_plugin.so
 /home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so
 /home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /opt/ros/kinetic/lib/libtf.so
-/home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /home/dvir/catkin_ws/devel/lib/libtf2_ros.so
 /home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /opt/ros/kinetic/lib/libactionlib.so
-/home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /opt/ros/kinetic/lib/libtf2.so
+/home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /home/dvir/catkin_ws/devel/lib/libtf2.so
 /home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
 /home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /opt/ros/kinetic/lib/libimage_transport.so
 /home/dvir/catkin_ws/devel/lib/cvg_sim_gazebo_plugins/test_trajectory: /opt/ros/kinetic/lib/libmessage_filters.so

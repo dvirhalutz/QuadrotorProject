@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dvir/catkin_ws/build
 include rosplan/rosplan_dispatch_msgs/CMakeFiles/_rosplan_dispatch_msgs_generate_messages_check_deps_NonBlockingDispatchFeedback.dir/progress.make
 
 rosplan/rosplan_dispatch_msgs/CMakeFiles/_rosplan_dispatch_msgs_generate_messages_check_deps_NonBlockingDispatchFeedback:
-	cd /home/dvir/catkin_ws/build/rosplan/rosplan_dispatch_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosplan_dispatch_msgs /home/dvir/catkin_ws/devel/share/rosplan_dispatch_msgs/msg/NonBlockingDispatchFeedback.msg rosplan_dispatch_msgs/ActionFeedback:diagnostic_msgs/KeyValue
+	cd /home/dvir/catkin_ws/build/rosplan/rosplan_dispatch_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosplan_dispatch_msgs /home/dvir/catkin_ws/devel/share/rosplan_dispatch_msgs/msg/NonBlockingDispatchFeedback.msg rosplan_dispatch_msgs/ActionFeedback:diagnostic_msgs/KeyValue
 
 _rosplan_dispatch_msgs_generate_messages_check_deps_NonBlockingDispatchFeedback: rosplan/rosplan_dispatch_msgs/CMakeFiles/_rosplan_dispatch_msgs_generate_messages_check_deps_NonBlockingDispatchFeedback
 _rosplan_dispatch_msgs_generate_messages_check_deps_NonBlockingDispatchFeedback: rosplan/rosplan_dispatch_msgs/CMakeFiles/_rosplan_dispatch_msgs_generate_messages_check_deps_NonBlockingDispatchFeedback.dir/build.make
