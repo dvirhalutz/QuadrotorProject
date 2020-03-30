@@ -44,7 +44,7 @@ test_image_format = the format of the images the drone is taking
 """
 
 
-def model_test(path_to_model="./saved_models/densenet_SGD.pt", test_data_dir="../photos_taken_by_quadrotor/InTesting", list_of_classes=['withHat', 'withOutHat', 'withOutMan'], logging_path="../photos_taken_by_quadrotor/resualt.json", is_production=False, test_image_format="jpeg"):
+def model_test(path_to_model="./saved_models/densenet_SGD.pt", test_data_dir="../photos_taken_by_quadrotor/InTesting", list_of_classes=['withHat', 'withOutHat', 'withOutMan'], logging_path="../result.txt", is_production=False, test_image_format="png"):
     image_name_in_testing = ""
     for (_, _, filenames) in walk(test_data_dir):
         if filenames.endswith('.'+test_image_format):
