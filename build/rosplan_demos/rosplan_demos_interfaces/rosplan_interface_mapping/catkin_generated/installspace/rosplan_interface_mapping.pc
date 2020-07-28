@@ -1,8 +1,0 @@
-prefix=/home/dvir/catkin_ws/install
-
-Name: rosplan_interface_mapping
-Description: Description of rosplan_interface_mapping
-Version: 0.0.2
-Cflags: -I/home/dvir/catkin_ws/install/include
-Libs: -L/home/dvir/catkin_ws/install/lib 
-Requires: 

@@ -1,8 +1,0 @@
-#Goal definition
-string dest 
----
-#result definition
-string dest
----
-#feedback
-string dest

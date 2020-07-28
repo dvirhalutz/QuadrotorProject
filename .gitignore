@@ -1,5 +1,5 @@
-dataset/*
-src/rosplan/*
-ML/saved_models/*
-images_pool/*
-
+src/ROSPlan/
+src/ROSPlan/*
+src/rosplan_demos/
+src/rosplan_demos/*
+src/rotor_control/scripts/ML/saved_models/*

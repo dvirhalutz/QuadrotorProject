@@ -6,12 +6,14 @@ import torch.optim as optim
 import numpy as np
 import torchvision
 from torchvision import datasets, models, transforms
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import time
 import os
 import copy
 import logging
 from os import walk
+from datetime import datetime
+
 
 
 # Models to choose from [resnet, alexnet, vgg, squeezenet, densenet, inception]
@@ -22,11 +24,11 @@ optimaizer = "SGD"
 
 # batch_size = 10
 
-path_to_model = 'saved_models/' + model_name + '_' + optimaizer + '.pt'
+# path_to_model = 'saved_models/' + model_name + '_' + optimaizer + '.pt'
 
-test_data_dir = "./data_set"
+# test_data_dir = "./data_set"
 
-train_data_dir = "./train"
+# train_data_dir = "./train"
 
 """
 path_to_model = the path to the saved weights
@@ -44,30 +46,41 @@ test_image_format = the format of the images the drone is taking
 """
 
 
-def model_test(path_to_model="./saved_models/densenet_SGD.pt", test_data_dir="../photos_taken_by_quadrotor/InTesting", list_of_classes=['withHat', 'withOutHat', 'withOutMan'], logging_path="../result.txt", is_production=False, test_image_format="png"):
+def model_test(path_to_model="/home/dvir/catkin_new/src/rotor_control/scripts/ML/saved_models/densenet_SGD.pt", test_data_dir="/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/InTesting", list_of_classes=['withHat', 'withOutHat', 'withOutMan'], logging_path="/home/dvir/catkin_new/src/rotor_control/scripts/result.txt", is_production=True, test_image_format="png"):
+
+    log_file = logging_path
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger(__name__)
+    handler = logging.FileHandler(log_file, 'a+')
+    handler.setLevel(logging.INFO)
+    logger.addHandler(handler)
+
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S - %d/%m/%Y")
+    logger.info(current_time)
+
     image_name_in_testing = ""
     for (_, _, filenames) in walk(test_data_dir):
-        if filenames.endswith('.'+test_image_format):
-            image_name_in_testing = filenames
+        for f in filenames:
+            if f.endswith('.'+test_image_format):
+                image_name_in_testing = f
+                break
+        if image_name_in_testing != "":
             break
     if is_production == False:
         class_name = ""
         for class_name in list_of_classes:
             if class_name in image_name_in_testing:
                 image_class_name = class_name
+                logger.info('image right class is:\t' + image_class_name)
                 break
     if image_name_in_testing == "":
         return "EMPTY"
+
+    # print('the image is: ' + image_name_in_testing)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    log_file = logging_path
-    logging.basicConfig(level=logging.INFO)
-    logger = logging.getLogger(__name__)
-    handler = logging.FileHandler(log_file, '+w')
-    handler.setLevel(logging.INFO)
-    logger.addHandler(handler)
-
-    logger.info(f'image name:\t{image_name_in_testing}')
+    logger.info('image name:\t' + image_name_in_testing)
 
     data_transforms = transforms.Compose([
         transforms.ToTensor(),
@@ -75,8 +88,8 @@ def model_test(path_to_model="./saved_models/densenet_SGD.pt", test_data_dir="..
     ])
 
     # Create test datasets
-    test_image_datasets = datasets.ImageFolder(os.path.join(
-        test_data_dir, 'test'), data_transforms)
+
+    test_image_datasets = datasets.ImageFolder(test_data_dir, data_transforms)
 
     # Create test dataloader
     dataloaders_dict = torch.utils.data.DataLoader(
@@ -88,13 +101,24 @@ def model_test(path_to_model="./saved_models/densenet_SGD.pt", test_data_dir="..
     net.eval()
     evaluate_class = "EMPTY"
     # i = 1
+
     with torch.no_grad():
         for data in dataloaders_dict:
             images, _ = data
             outputs = net(images.to(device))
-            for index, _ in enumerate(torch.argmax(outputs, dim=1)):
-                logger.info(f'image test result:\t{list_of_classes[index]}')
-                evaluate_class = list_of_classes[index]
-                if is_production == False:
-                    logger.info(f'image right class is:\t{image_class_name}')
-    return evaluate_class
+            index = torch.argmax(outputs, dim=1).item()
+            print('*'*20)
+            print(outputs)
+            print(index)
+            print('*'*20)
+
+            logger.info('image test result:\t' + list_of_classes[index])
+            evaluate_class = list_of_classes[index]
+            # print(evaluate_class)
+            if is_production == False:
+                logger.info('image right class is:\t' + image_class_name)
+    logger.info('(' + image_name_in_testing + ','+list_of_classes[index]+')')
+    full_path_to_img = os.path.join(test_data_dir,"tmp",image_name_in_testing)
+  
+    return evaluate_class,image_name_in_testing,full_path_to_img
+

@@ -3,6 +3,7 @@
 
 import rospy
 import sys
+# sys.path.insert(0, './ML/')
 from gazebo_msgs.srv import SetModelState, GetModelState
 from geometry_msgs.msg import Twist
 from geometry_msgs.msg import Pose
@@ -10,6 +11,10 @@ from gazebo_msgs.msg import ModelState
 from ML.test import model_test
 from os import walk
 import os
+import multiprocessing
+import cv2
+from std_msgs.msg import Empty
+import time
 
 
 class controlQuadrotor():
@@ -17,11 +22,30 @@ class controlQuadrotor():
         self.mode = mode
         self.lowHight = lowHight
         self.highHight = highHight
-        self.x, self.y, self.z = 0, 0, 0
+        self.x, self.y, self.z = 14, -16, 5
+        self.all_img_processes = []
         rospy.init_node('controller', anonymous=True)
         # TAKEOFF Command - Ask The Other Dvir How To Do It...
 
-    def moveDroneToNewLocation(self, newLocation):
+    def takeOff(self):
+        pub = rospy.Publisher('/ardrone/takeoff', Empty, queue_size=10)
+	while pub.get_num_connections() == 0:
+	    rospy.loginfo("Waiting for subscriber to connect")
+	    rospy.sleep(1)
+	rospy.loginfo("taking off")
+        pub.publish(Empty())
+
+
+    def land(self):
+        pub = rospy.Publisher('/ardrone/land', Empty, queue_size=10)
+	while pub.get_num_connections() == 0:
+	    rospy.loginfo("Waiting for subscriber to connect")
+	    rospy.sleep(1)
+	rospy.loginfo("landing")
+        pub.publish(Empty())
+
+    def moveDroneToNewLocation(self, newLocation,batteryLevel):
+	rospy.loginfo("Battery Level  = " + str(batteryLevel))
         x, y, z = newLocation
         if self.mode == "teleport":
             self.setPosition(x, y, z)
@@ -33,15 +57,19 @@ class controlQuadrotor():
 
     def moveDroneLower(self):
         # move random image from PreTesting to InTesting
-        path_to_PreTesting = "./photos_taken_by_quadrotor/PreTesting"
-        path_to_InTesting = "./photos_taken_by_quadrotor/InTesting"
+        path_to_PreTesting = "/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/PreTesting"
+        path_to_InTesting = "/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/InTesting/tmp"
         image_path, image_new_path = "", ""
+        rospy.loginfo("Path to Pretesting = " + path_to_PreTesting)
         for (root, _, filename) in walk(path_to_PreTesting):
-            if filename.endswith('.png'):
-                image_path = os.path.join(root, filename)
-                image_new_path = os.path.join(path_to_InTesting, filename)
-                os.rename(image_path, image_new_path)
-                rospy.loginfo(f"Moved Image -> {filename}")
+            for f in filename:
+                if f.endswith('.png'):
+                    image_path = os.path.join(root, f)
+                    image_new_path = os.path.join(path_to_InTesting, f)
+                    os.rename(image_path, image_new_path)
+                    rospy.loginfo("Moved Image -> " + f)
+                    break
+            if image_path != "":
                 break
         if image_path == "":
             rospy.loginfo("Couldn't get the image from the folder")
@@ -51,26 +79,75 @@ class controlQuadrotor():
         else:
             self.flyToPos(self.x, self.y, self.lowHight)
         self.z = self.lowHight
+    # img_path includes the file name as well
 
-    def evaluateImage(self):
-        # evaluate image in InTesting folder
-        image_class = model_test()
-        if image_class == "EMPLTY":
+    def img_show(self, img_path, img_class, battery):
+        rospy.loginfo("img_class = "+img_class + " img_path = " + img_path)
+        time.sleep(1)
+        img = cv2.imread(img_path)
+        cv2.namedWindow(img_class,cv2.WINDOW_NORMAL)  # Create a named window
+        #cv2.resizeWindow(img_class, 400, 400)
+        cv2.moveWindow(img_class, 40, 80)  # Move it to (40,30)
+        # Write some Text
+
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        bottomLeftCornerOfText = (5, 210)
+        fontScale = 0.6
+        fontColor = (255, 255, 255)
+        lineType = 2
+
+        cv2.putText(img, img_class,
+                    bottomLeftCornerOfText,
+                    font,
+                    fontScale,
+                    fontColor,
+                    lineType)
+	cv2.putText(img, "battery - " + str(battery)+"%",
+                    (5,240),
+                    font,
+                    fontScale,
+                    fontColor,
+                    lineType)
+
+
+        cv2.imshow(img_class, img)
+        cv2.waitKey(0)
+
+
+    def evaluateImage(self,battery):
+        for process in self.all_img_processes:
+            process.terminate()
+        self.all_img_processes = []
+        rospy.loginfo("evalutate image")
+       # evaluate image in InTesting folder
+        image_class,img_name,full_path_to_img = model_test(list_of_classes=[
+                                 "With Helmet", "Without Helmet", "No Worker"])
+        img_path_with_img_name = ""
+
+        if image_class == "EMPTY":
             rospy.loginfo("Couldn't evaluate the image - Problem")
         else:
-            rospy.loginfo(f"The image has classified as: {image_class}")
+            process = multiprocessing.Process(target=self.img_show,\
+                                              args=("/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/Done/"+img_name,image_class,battery))
+            process.start()
+            self.all_img_processes.append(process)
+            rospy.loginfo("The image has classified as: " + image_class)
 
     def moveDroneHigher(self):
          # move image from InTesting to Done
-        path_to_InTesting = "./photos_taken_by_quadrotor/InTesting"
-        path_to_Done = "./photos_taken_by_quadrotor/Done"
+        path_to_InTesting = "/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/InTesting/tmp"
+        path_to_Done = "/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/Done"
         image_path, image_new_path = "", ""
         for (root, _, filename) in walk(path_to_InTesting):
-            if filename.endswith('.png'):
-                image_path = os.path.join(root, filename)
-                image_new_path = os.path.join(path_to_Done, filename)
-                os.rename(image_path, image_new_path)
-                rospy.loginfo(f"Moved Image -> {filename}")
+            for f in filename:
+                if f.endswith('.png'):
+                    image_path = os.path.join(root, f)
+                    image_new_path = os.path.join(path_to_Done, f)
+                    os.rename(image_path, image_new_path)
+                    rospy.loginfo("Moved Image -> " + f)
+                    break
+            if image_path != "":
+                break
         if image_path == "":
             rospy.loginfo("Don't have any image inside the InTesting")
 
@@ -80,13 +157,22 @@ class controlQuadrotor():
             self.flyToPos(self.x, self.y, self.highHight)
         self.z = self.highHight
 
+    def moveDroneToChargeAndBack(self, battery_location,batteryLevel):
+        init_location = (self.x, self.y, self.z)
+	battery_location_high = (battery_location[0],battery_location[1],5)
+	self.moveDroneToNewLocation(battery_location_high,batteryLevel)
+        self.moveDroneToNewLocation(battery_location,batteryLevel)
+        rospy.loginfo("charge to 100%")
+	self.moveDroneToNewLocation(battery_location_high,batteryLevel)
+        self.moveDroneToNewLocation(init_location,100)
+
     def speed(self, dst, curr):
-        if abs(dst-curr) < 0.1:
+        if abs(dst-curr) < 0.4:
             return 0
         elif dst > curr:
-            return 0.2
+            return 0.4
         else:
-            return -0.2
+            return -0.4
 
     def init_twist(self, x, y, z):
         rospy.wait_for_service('/gazebo/set_model_state')
@@ -161,9 +247,6 @@ class controlQuadrotor():
 
     def flyToPos(self, x, y, z):
         rospy.loginfo('A request for position set has been received ')
-        rospy.loginfo('quadrotor taking off ')
-        # take_off
-        # wait
         rospy.loginfo('quadrotor is headed for destination')
         pub = rospy.Publisher('cmd_vel', Twist, queue_size=10)
 

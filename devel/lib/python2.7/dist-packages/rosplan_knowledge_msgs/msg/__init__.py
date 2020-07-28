@@ -6,3 +6,4 @@ from ._ExprBase import *
 from ._ExprComposite import *
 from ._KnowledgeItem import *
 from ._ProbabilisticEffect import *
+from ._StatusUpdate import *

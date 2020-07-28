@@ -1,8 +1,0 @@
-prefix=/home/dvir/catkin_ws/install
-
-Name: actionlib_tut
-Description: Description of actionlib_tut
-Version: 0.0.0
-Cflags: -I/home/dvir/catkin_ws/install/include
-Libs: -L/home/dvir/catkin_ws/install/lib 
-Requires: actionlib_msgs

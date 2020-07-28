@@ -3,27 +3,10 @@
 (:objects
     drone - quadrotor
     location00 location01 location02 location03 location10 location11 location12 location13 location20 location21 location22 location23 location30 location31 location32 location33 - location
-    person1 person2 person3 - person
 )
 (:init
     (checked location00)
-    
-    (unPictured location00)
-    (unPictured location01)
-    (unPictured location02)
-    (unPictured location03)
-    (unPictured location10)
-    (unPictured location11)
-    (unPictured location12)
-    (unPictured location13)
-    (unPictured location20)
-    (unPictured location21)
-    (unPictured location22)
-    (unPictured location23)
-    (unPictured location30)
-    (unPictured location31)
-    (unPictured location32)
-    (unPictured location33)
+    (checked location33)
 
     (unchecked location01)
     (unchecked location02)
@@ -39,7 +22,24 @@
     (unchecked location30)
     (unchecked location31)
     (unchecked location32)
-    (unchecked location33)
+
+    (pictured location00)
+    (pictured location33)
+
+    (unpictured location01)
+    (unpictured location02)
+    (unpictured location03)
+    (unpictured location10)
+    (unpictured location11)
+    (unpictured location12)
+    (unpictured location13)
+    (unpictured location20)
+    (unpictured location21)
+    (unpictured location22)
+    (unpictured location23)
+    (unpictured location30)
+    (unpictured location31)
+    (unpictured location32)
 
     (locationadjust location00 location01)
     (locationadjust location00 location10)
@@ -128,14 +128,14 @@
 
     (at_d drone location00)
 
-    (containobst location01)
+    (containobst location12)
 
     (notcontainobst location00)
+    (notcontainobst location01)
     (notcontainobst location02)
     (notcontainobst location03)
     (notcontainobst location10)
     (notcontainobst location11)
-    (notcontainobst location12)
     (notcontainobst location13)
     (notcontainobst location20)
     (notcontainobst location21)
@@ -151,13 +151,12 @@
 
 )
 (:goal (and
-
     (pictured location00)
+    (pictured location01)
     (pictured location02)
     (pictured location03)
     (pictured location10)
     (pictured location11)
-    (pictured location12)
     (pictured location13)
     (pictured location20)
     (pictured location21)
@@ -167,13 +166,12 @@
     (pictured location31)
     (pictured location32)
     (pictured location33)
-   
     (checked location00)
+    (checked location01)
     (checked location02)
     (checked location03)
     (checked location10)
     (checked location11)
-    (checked location12)
     (checked location13)
     (checked location20)
     (checked location21)

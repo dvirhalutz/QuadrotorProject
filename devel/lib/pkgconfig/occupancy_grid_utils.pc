@@ -1,8 +1,8 @@
-prefix=/home/dvir/catkin_ws/devel
+prefix=/home/dvir/catkin_new/devel
 
 Name: occupancy_grid_utils
 Description: Description of occupancy_grid_utils
 Version: 0.0.10
-Cflags: -I/home/dvir/catkin_ws/devel/include -I/home/dvir/catkin_ws/src/occupancy_grid_utils/include
-Libs: -L/home/dvir/catkin_ws/devel/lib -lgrid_utils
+Cflags: -I/home/dvir/catkin_new/devel/include -I/home/dvir/catkin_new/src/occupancy_grid_utils/include
+Libs: -L${prefix}/lib -lgrid_utils
 Requires: nav_msgs geometry_msgs sensor_msgs laser_geometry roscpp rospy tf tf2_bullet message_runtime

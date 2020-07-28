@@ -1,8 +1,8 @@
-prefix=/home/dvir/catkin_ws/devel
+prefix=/home/dvir/catkin_new/devel
 
 Name: cvg_sim_gazebo
 Description: Description of cvg_sim_gazebo
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/dvir/catkin_ws/devel/lib 
+Libs: -L${prefix}/lib 
 Requires: 

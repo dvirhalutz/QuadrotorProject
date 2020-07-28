@@ -21,4 +21,6 @@
     (:file "_package_KnowledgeItem" :depends-on ("_package"))
     (:file "ProbabilisticEffect" :depends-on ("_package_ProbabilisticEffect"))
     (:file "_package_ProbabilisticEffect" :depends-on ("_package"))
+    (:file "StatusUpdate" :depends-on ("_package_StatusUpdate"))
+    (:file "_package_StatusUpdate" :depends-on ("_package"))
   ))
