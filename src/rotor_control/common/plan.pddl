@@ -8,7 +8,7 @@ Resorting to best-first search
 b (25.000 | 0.000)b (24.000 | 0.001)b (23.000 | 0.002)b (22.000 | 0.003)b (21.000 | 0.004)b (20.000 | 0.005)b (19.000 | 0.006)b (18.000 | 0.007)b (17.000 | 0.008)b (16.000 | 0.009)b (15.000 | 0.010)b (14.000 | 0.011)b (13.000 | 0.012)b (12.000 | 0.013)b (11.000 | 0.014)b (10.000 | 0.015)b (9.000 | 0.016)b (8.000 | 0.017)b (7.000 | 0.018)b (6.000 | 0.019)b (5.000 | 0.020)b (4.000 | 0.021)b (3.000 | 0.022)b (2.000 | 0.023)b (1.000 | 0.024);;;; Solution Found
 ; States evaluated: 155
 ; Cost: 0.025
-; Time 0.06
+; Time 0.08
 0.000: (movebetweensquares drone location00 location01)  [0.001]
 0.001: (takepic drone location01)  [0.001]
 0.002: (movebetweensquares drone location01 location02)  [0.001]

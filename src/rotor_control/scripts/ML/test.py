@@ -15,7 +15,6 @@ from os import walk
 from datetime import datetime
 
 
-
 # Models to choose from [resnet, alexnet, vgg, squeezenet, densenet, inception]
 model_name = "densenet"
 
@@ -45,8 +44,11 @@ is_production = boolean - if True so wont print to log file the true image class
 test_image_format = the format of the images the drone is taking
 """
 
+currFolder = os.path.dirname(os.path.realpath(__file__))
+parentFolder = os.path.abspath(os.path.join(currFolder, os.pardir))
 
-def model_test(path_to_model="/home/dvir/catkin_new/src/rotor_control/scripts/ML/saved_models/densenet_SGD.pt", test_data_dir="/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/InTesting", list_of_classes=['withHat', 'withOutHat', 'withOutMan'], logging_path="/home/dvir/catkin_new/src/rotor_control/scripts/result.txt", is_production=True, test_image_format="png"):
+
+def model_test(path_to_model=currFolder+"/saved_models/densenet_SGD.pt", test_data_dir=parentFolder+"/photos_taken_by_quadrotor/InTesting", list_of_classes=['withHat', 'withOutHat', 'withOutMan'], logging_path=parentFolder+"/result.txt", is_production=True, test_image_format="png"):
 
     log_file = logging_path
     logging.basicConfig(level=logging.INFO)

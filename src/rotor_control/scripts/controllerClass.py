@@ -16,6 +16,8 @@ import cv2
 from std_msgs.msg import Empty
 import time
 
+currFolder = os.path.dirname(os.path.realpath(__file__))
+parentFolder = os.path.abspath(os.path.join(currFolder, os.pardir))
 
 class controlQuadrotor():
     def __init__(self, mode='teleport', lowHight=2, highHight=7):
@@ -57,8 +59,8 @@ class controlQuadrotor():
 
     def moveDroneLower(self):
         # move random image from PreTesting to InTesting
-        path_to_PreTesting = "/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/PreTesting"
-        path_to_InTesting = "/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/InTesting/tmp"
+        path_to_PreTesting = currFolder+"/photos_taken_by_quadrotor/PreTesting"
+        path_to_InTesting = currFolder+"/photos_taken_by_quadrotor/InTesting/tmp"
         image_path, image_new_path = "", ""
         rospy.loginfo("Path to Pretesting = " + path_to_PreTesting)
         for (root, _, filename) in walk(path_to_PreTesting):
@@ -128,15 +130,15 @@ class controlQuadrotor():
             rospy.loginfo("Couldn't evaluate the image - Problem")
         else:
             process = multiprocessing.Process(target=self.img_show,\
-                                              args=("/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/Done/"+img_name,image_class,battery))
+                                              args=(currFolder+"/photos_taken_by_quadrotor/Done/"+img_name,image_class,battery))
             process.start()
             self.all_img_processes.append(process)
             rospy.loginfo("The image has classified as: " + image_class)
 
     def moveDroneHigher(self):
          # move image from InTesting to Done
-        path_to_InTesting = "/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/InTesting/tmp"
-        path_to_Done = "/home/dvir/catkin_new/src/rotor_control/scripts/photos_taken_by_quadrotor/Done"
+        path_to_InTesting = currFolder+"/photos_taken_by_quadrotor/InTesting/tmp"
+        path_to_Done = currFolder+"/photos_taken_by_quadrotor/Done"
         image_path, image_new_path = "", ""
         for (root, _, filename) in walk(path_to_InTesting):
             for f in filename:

@@ -1,8 +1,0 @@
-prefix=/home/dvir/catkin_new/devel
-
-Name: tf2_msgs
-Description: Description of tf2_msgs
-Version: 0.6.5
-Cflags: -I/home/dvir/catkin_new/devel/include -I/home/dvir/catkin_new/src/geometry2/tf2_msgs/include
-Libs: -L${prefix}/lib 
-Requires: message_generation geometry_msgs actionlib_msgs

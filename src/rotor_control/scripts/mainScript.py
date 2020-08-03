@@ -4,6 +4,10 @@
 from controllerClass import controlQuadrotor as CQ
 from renderPlanClass import createRenderedPlanFile as RPL
 
+import os 
+currFolder = os.path.dirname(os.path.realpath(__file__))
+parentFolder = os.path.abspath(os.path.join(currFolder, os.pardir))
+
 
 locations = {
     'location00': (15, -15, 5),
@@ -30,8 +34,8 @@ dictOfAtions = {
     'movebetweensquares': [('moveDroneToNewLocation', 3)],
     'takepic': [('moveDroneLower', -1), ('evaluateImage', -1), ('moveDroneHigher', -1)]
 }
-pathToPlan = '/home/dvir/catkin_new/src/rotor_control/common/plan.pddl'
-pathToSaveRenderedFile = '/home/dvir/catkin_new/src/rotor_control/common/planRendered.txt'
+pathToPlan = parentFolder+'/common/plan.pddl'
+pathToSaveRenderedFile = parentFolder+'/common/planRendered.txt'
 
 # battary management (see evaluation inside the loop)
 battary = 100
