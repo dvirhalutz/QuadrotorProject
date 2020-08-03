@@ -20,17 +20,16 @@ https://technionmail-my.sharepoint.com/:u:/g/personal/dvirh_campus_technion_ac_i
 - mkdir <workspace_folder>/src/rotor_contorl/scripts/ML/saved_models/
 - cp <downloaded weights path> <workspace_folder>/src/rotor_control/scripts/ML/saved_models/
 
+ROSPLAN:
+- cd <workspace_folder>/src
+- git clone https://github.com/KCL-Planning/ROSPlan
+- cd ..
+- catkin_make
+
 ADDDIONAL ENVIOURMENT SETTINGS:
 - cd <workspace_folder>/src
 - mkdir -p ROSPlan/rosplan_knowledge_base/common/mongoDB
 - mkdir -p rotor_control/scripts/photos_taken_by_quadrotor/InTesting/tmp
-
-ROSPLAN:
-- cd <workspace_folder>/src
-- clone https://github.com/KCL-Planning/ROSPlan
-- cd ..
-- catkin_make
-
 
 RUNNING SIMULATION: 
 - In a new terminal type "roscore"
