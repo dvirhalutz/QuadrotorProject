@@ -23,9 +23,7 @@ https://technionmail-my.sharepoint.com/:u:/g/personal/dvirh_campus_technion_ac_i
 ADDDIONAL ENVIOURMENT SETTINGS:
 - cd <workspace_folder>/src
 - mkdir ROSPlan/rosplan_knowledge_base/common/mongoDB
-```
-mkdir rotor_control/scripts/photos_taken_by_quadrotor/InTesting
-```
+- mkdir rotor_control/scripts/photos_taken_by_quadrotor/InTesting
 - mkdir rotor_control/scripts/photos_taken_by_quadrotor/InTesting/tmp
 
 ROSPLAN:
