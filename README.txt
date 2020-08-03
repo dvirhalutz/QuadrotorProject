@@ -36,3 +36,7 @@ RUNNING SIMULATION:
 - In a diffrent terminal type "source <workspace_folder>/devel/setup.bash"
 - Run ./runAll.sh src/rotor_control/common/plan.pddl src/rotor_control/scripts/mainScript.py
 
+IMPORTATNT NOTES:
+If you want to rename the folder (i.e from "QuadrotorProject" to "catkin_ws" ) make sure to do that before build.
+Renaming the folder after catkin_make might cause enviroumnet issues.
+
