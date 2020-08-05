@@ -17,7 +17,7 @@ How to install:
 MODEL WEIGHTS:
 - Download weights from 
 https://technionmail-my.sharepoint.com/:u:/g/personal/dvirh_campus_technion_ac_il/EQF8Vy6U3DtKrs31kuydLcQBTFFsNGRQevdqaUaKciIajg?e=uhSMYD
-- mkdir <workspace_folder>/src/rotor_contorl/scripts/ML/saved_models/
+- mkdir -p <workspace_folder>/src/rotor_control/scripts/ML/saved_models/
 - cp <downloaded weights path> <workspace_folder>/src/rotor_control/scripts/ML/saved_models/
 
 ROSPLAN:
