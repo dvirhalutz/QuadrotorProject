@@ -24,6 +24,13 @@ ROSPLAN:
 - cd <workspace_folder>/src
 - git clone https://github.com/KCL-Planning/ROSPlan
 - cd ..
+
+TUM_SIMULATOR:
+- sudo apt-get install ros-kinetic-hector-*
+- sudo apt-get install ros-kinetic-ardrone-autonomy
+
+BUILD:
+- cd <workspace_folder>
 - catkin_make
 
 ADDDIONAL ENVIOURMENT SETTINGS:
