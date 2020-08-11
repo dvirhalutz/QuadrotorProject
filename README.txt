@@ -37,6 +37,8 @@ ADDDIONAL ENVIOURMENT SETTINGS:
 - cd <workspace_folder>/src
 - mkdir -p ROSPlan/rosplan_knowledge_base/common/mongoDB
 - mkdir -p rotor_control/scripts/photos_taken_by_quadrotor/InTesting/tmp
+- pip2 install torch torchvision
+- pip2 install future
 
 RUNNING SIMULATION: 
 - In a new terminal type "roscore"
@@ -44,6 +46,9 @@ RUNNING SIMULATION:
 - Run ./runAll.sh src/rotor_control/common/plan.pddl src/rotor_control/scripts/mainScript.py
 
 IMPORTATNT NOTES:
-If you want to rename the folder (i.e from "QuadrotorProject" to "catkin_ws" ) make sure to do that before build.
-Renaming the folder after catkin_make might cause enviroumnet issues.
+-If you want to rename the folder (i.e from "QuadrotorProject" to "catkin_ws" ) make sure to do that before build.
+ Renaming the folder after catkin_make might cause enviroumnet issues.
+- If it's the first time you are running the project, you might get an error and gazebo will be stuck.
+  If that happen- just wait coule minutes for the gezebo to open (without pressing any key).
+  after gazebo open you can rerun the script and it should work
 
