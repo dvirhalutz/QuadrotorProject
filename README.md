@@ -91,7 +91,3 @@ source <workspace_folder>/devel/setup.bash
 - If it's the first time you are running the project, you might get an error and gazebo will be stuck.
   If that happen- **just wait** several minutes for the gezebo to open (without pressing any keys).
   after gazebo opens you can re-run the script and it should work.
-
-### Thanks
-
-Thank you for @ dvirhalutz for a great partnership
